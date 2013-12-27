@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:name>Send Tab URLs</em:name>
+    <em:id>{4aebcd37-f454-4928-9233-174a026ed367}</em:id>
+    <em:type>2</em:type>
+    <em:version>2.1.1</em:version>
+    <em:description>Send a list of browser tab URLs to email, Web mail, or the clipboard.</em:description>
+    <em:creator>AE Creations</em:creator>
+    <em:contributor>Babelzilla Translators</em:contributor>
+    <em:homepageURL>http://aecreations.mozdev.org/</em:homepageURL>
+    <em:optionsURL>chrome://sendtabs/content/preferences.xul</em:optionsURL>
+    <em:updateURL>https://www.mozdev.org/p/updates/aecreations/%7B4aebcd37-f454-4928-9233-174a026ed367%7D/update.rdf</em:updateURL>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+	<em:minVersion>20.0</em:minVersion>
+	<em:maxVersion>20.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

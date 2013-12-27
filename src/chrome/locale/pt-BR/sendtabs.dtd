@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Send Tab URLs...">
+<!ENTITY sendtabs.menuitem.accesskey "d">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs...">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Enviar via e-mails todos as URLs das abas da janela corrente">
+<!---->
+<!ENTITY sendToClipboardConfirm "A lista de URL foi copiada para a área de transferência.">
+<!---->
+<!ENTITY googAppsDomain.label "Domínio Google App:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "Enviar para Área de Transferência">
+<!---->
+<!ENTITY fmtopts.caption "Opções de formatação do e-mail">
+<!ENTITY fmtnone.label "Lista aberta">
+<!ENTITY fmtnone.accesskey "P">
+<!ENTITY fmtnumbered.label "Numerado">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Marcação">
+<!ENTITY fmtbulleted.accesskey "B">
+<!ENTITY alwaysask.label "Sempre perguntar como será a formatação da lista da URL">
+<!ENTITY alwaysask.accesskey "A">
+<!ENTITY sendTo.label "Enviar para:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "Programa de E-mail padrão">
+<!ENTITY mailClient.clipboard "Área de Transferência">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Opções Send Tab URLs">
+<!ENTITY tabOptions "Geral">
+<!ENTITY tabClipboard "Área de Transferência">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Sempre perguntar como desejo formatar a lista de URL">
+<!ENTITY alwaysAskFmt.accesskey "A">
+<!ENTITY fmtSettings.label "Configurações...">
+<!ENTITY fmtSettings.accesskey "S">
+<!ENTITY webMail "Webmail">
+<!ENTITY webmailNewTab.label "Abrir em nova aba do navegador">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "Abrir em nova janela do navegador">
+<!ENTITY webmailNewWnd.accesskey "w">
+<!ENTITY showTabMenuCmd.label "Mostrar comandos do Send Tab URLs no menu Listar Todas as Abas">
+<!ENTITY showTabMenuCmd.accesskey "o">
+<!ENTITY confirmCopy.label "Mostrar confirmação quando a lista de URL for copiada para a área de transferência">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "Incluir o contador de URL">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "Colocar:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "acima">
+<!ENTITY urlPos.below "abaixo">
+<!ENTITY urlList.label "a lista de URL">

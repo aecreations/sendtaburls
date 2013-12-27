@@ -1,0 +1,55 @@
+<!-- General -->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!-- Overlay -->
+<!ENTITY sendtabs.menuitem.label "Skicka flik-URL:er…">
+<!ENTITY sendtabs.menuitem.accesskey "c">
+<!ENTITY sendtabs.toolbarbutton.label "Skicka flik-URL:er">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Skicka en lista över webbläsarflik-URL:er via e-post, webbmejl eller till Urklipp">
+<!-- Send To Clipboard confirmation dialog -->
+<!ENTITY sendToClipboardConfirm "URL-listan har kopierats till Urklipp.">
+<!-- Google Apps domain prompt -->
+<!ENTITY googAppsDomain.label "Google Apps-domän:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!-- Gmail/Google Apps long URL list -->
+<!ENTITY sendToClipboard.label "Skicka till Urklipp">
+<!-- Send Tab URLs dialog -->
+<!ENTITY fmtopts.caption "Formateringsinställningar">
+<!ENTITY fmtnone.label "Oformaterad lista">
+<!ENTITY fmtnone.accesskey "O">
+<!ENTITY fmtnumbered.label "Numrerad lista">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Punktlista">
+<!ENTITY fmtbulleted.accesskey "P">
+<!ENTITY alwaysask.label "Visa alltid dialog vid sändning">
+<!ENTITY alwaysask.accesskey "V">
+<!ENTITY sendTo.label "Skicka till:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "Standardprogram för e-post">
+<!ENTITY mailClient.clipboard "Urklipp">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!-- Extension preferences dialog -->
+<!ENTITY sendtabsPrefDlg.title "Inställningar för Send Tab URLs">
+<!ENTITY tabOptions "Allmänt">
+<!ENTITY tabClipboard "Urklipp">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Fråga alltid hur URL-listan skall formateras">
+<!ENTITY alwaysAskFmt.accesskey "F">
+<!ENTITY fmtSettings.label "Inställningar…">
+<!ENTITY fmtSettings.accesskey "I">
+<!ENTITY webMail "Webbmejl">
+<!ENTITY webmailNewTab.label "Öppna i ny webbläsarflik">
+<!ENTITY webmailNewTab.accesskey "b">
+<!ENTITY webmailNewWnd.label "Öppna i nytt webbläsarfönster">
+<!ENTITY webmailNewWnd.accesskey "w">
+<!ENTITY showTabMenuCmd.label "Visa Skicka flik-URL:er-kommando i menyn &quot;Visa upp alla flikar&quot;">
+<!ENTITY showTabMenuCmd.accesskey "o">
+<!ENTITY confirmCopy.label "Visa bekräftelse när URL-listan har kopierats till Urklipp">
+<!ENTITY confirmCopy.accesskey "V">
+<!ENTITY includeURLCount.label "Inkludera antalet URL:er">
+<!ENTITY includeURLCount.accesskey "k">
+<!ENTITY placeIt.label "Placera det:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "ovanför">
+<!ENTITY urlPos.below "nedanför">
+<!ENTITY urlList.label "URL-listan">

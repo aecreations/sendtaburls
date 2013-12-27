@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "탭 URL 보내기...">
+<!ENTITY sendtabs.menuitem.accesskey "d">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
+<!ENTITY sendtabs.toolbarbutton.tooltip "현재 창 내 모든 열린 브라우저 탭의 URL들을 이메일로 보냅니다">
+<!---->
+<!ENTITY sendToClipboardConfirm "URL 목록이 클립 보드에 복사되었습니다.">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps 도메인:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "클립보드에 보내기">
+<!---->
+<!ENTITY fmtopts.caption "이메일 형식 선택사항">
+<!ENTITY fmtnone.label "단순 목록">
+<!ENTITY fmtnone.accesskey "P">
+<!ENTITY fmtnumbered.label "숫자">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "단추">
+<!ENTITY fmtbulleted.accesskey "B">
+<!ENTITY alwaysask.label "언제나 전송시 대화창 표시">
+<!ENTITY alwaysask.accesskey "A">
+<!ENTITY sendTo.label "전송:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "기본 이메일 프로그램">
+<!ENTITY mailClient.clipboard "클립보드">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs 선택사항">
+<!ENTITY tabOptions "일반">
+<!ENTITY tabClipboard "클립보드">
+<!ENTITY tabGoogleApps "구글 앱스">
+<!ENTITY alwaysAskFmt.label "언제나 어떤 형식의 URL 목록을 원하는지 묻기">
+<!ENTITY alwaysAskFmt.accesskey "A">
+<!ENTITY fmtSettings.label "설정...">
+<!ENTITY fmtSettings.accesskey "S">
+<!ENTITY webMail "웹 메일">
+<!ENTITY webmailNewTab.label "새 브라우저 탭으로 열기">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "새 브라우저 창으로 열기">
+<!ENTITY webmailNewWnd.accesskey "w">
+<!ENTITY showTabMenuCmd.label "모든 탭 메뉴에 탭 URL 보내기 명령 표시">
+<!ENTITY showTabMenuCmd.accesskey "o">
+<!ENTITY confirmCopy.label "URL 목록이 클립보드로 복사되면 확인 하기">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "URL 갯수를 포함">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "배치:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "위에">
+<!ENTITY urlPos.below "아래에">
+<!ENTITY urlList.label "URL 목록">

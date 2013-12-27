@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://sendtabs/skin/preferences.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://sendtabs/locale/sendtabs.dtd">
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is Send Tab URLs.
+   -
+   - The Initial Developer of the Original Code is
+   - Alex Eng <ateng@users.sourceforge.net>.
+   - Portions created by the Initial Developer are Copyright (C) 2008-2011
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+
+<dialog id="ae-sendtabs-preferences" 
+ title="&sendtabsPrefDlg.title;"
+ orient="vertical"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+ buttons="accept,cancel"
+ onload="initDlg()" ondialogaccept="return doOK()"
+ ondialogcancel="return doCancel()">
+
+  <script type="application/javascript" src="chrome://sendtabs/content/preferences.js"/>
+
+  <stringbundle id="ae-sendtabs-strings" src="chrome://sendtabs/locale/sendtabs.properties"/>
+
+  <tabbox>
+    <tabs>
+      <tab label="&tabOptions;"/>
+      <tab label="&tabClipboard;"/>
+      <tab label="&tabGoogleApps;" id="tab-google-apps" hidden="true"/>
+    </tabs>
+    <tabpanels>
+      <!-- General tab -->
+      <tabpanel>
+	<checkbox id="show-tab-menu-cmd" label="&showTabMenuCmd.label;"
+         accesskey="&showTabMenuCmd.accesskey;" oncommand="showChangedPrefMsg()"/>
+        <checkbox id="always-ask-formatting" label="&alwaysAskFmt.label;"
+	 accesskey="&alwaysAskFmt.accesskey;"/>
+        <separator class="very-thin"/>
+	<hbox>
+	  <spacer class="indented"/>
+	  <button label="&fmtSettings.label;"
+	   accesskey="&fmtSettings.accesskey;"
+	   oncommand="showFormatSettingsDlg()"/>
+        </hbox>
+	<separator class="very-thin"/>
+	<groupbox>
+	  <caption label="&webMail;"/>
+	  <radiogroup id="webmail-radiogroup">
+	    <radio id="webmail-new-tab" label="&webmailNewTab.label;"
+	     accesskey="&webmailNewTab.accesskey;"/>
+	    <radio id="webmail-new-window" label="&webmailNewWnd.label;"
+	     accesskey="&webmailNewWnd.accesskey;"/>
+	  </radiogroup>
+	</groupbox>
+	<separator class="thin"/>
+      </tabpanel>
+
+      <!-- Clipboard tab -->
+      <tabpanel>
+        <checkbox id="confirm-copy" label="&confirmCopy.label;"
+	 accesskey="&confirmCopy.accesskey;" />
+	<checkbox id="include-url-count" label="&includeURLCount.label;"
+	 accesskey="&includeURLCount.accesskey;"
+	 oncommand="toggleClipboardURLCountPositonState(this)"/>
+	<grid>
+	  <rows>
+	    <row align="center">
+	      <spacer class="indented"/>
+	      <label value="&placeIt.label;" accesskey="&placeIt.accesskey;"
+	       id="url-count-position-label-pre" control="url-count-position"/>
+	      <menulist id="url-count-position">
+	      <menupopup>
+	        <menuitem label="&urlPos.above;" value="1"/>
+	        <menuitem label="&urlPos.below;" value="2"/>
+	      </menupopup>
+	      </menulist>
+	      <label id="url-count-position-label-post" value="&urlList.label;"/>
+	    </row>
+          </rows>
+	</grid>
+      </tabpanel>
+
+      <!-- Google Apps tab -->
+      <tabpanel>
+        <separator class="thin"/>
+	<label value="&googAppsDomain.label;"
+	 accesskey="&googAppsDomain.accesskey;" control="google-apps-domain"/>
+	<textbox id="google-apps-domain"/>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+
+</dialog>

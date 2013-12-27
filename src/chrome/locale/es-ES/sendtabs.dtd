@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Enviar direcciones de las pestañas...">
+<!ENTITY sendtabs.menuitem.accesskey "E">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Enviar por correo las direcciones de todas las pestañas abiertas en la ventana actual">
+<!---->
+<!ENTITY sendToClipboardConfirm "La lista de direcciones se ha copiado al portapapeles.">
+<!---->
+<!ENTITY googAppsDomain.label "Dominio de las aplicaciones Google:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "Enviar al portapapeles">
+<!---->
+<!ENTITY fmtopts.caption "Opciones de formato del email">
+<!ENTITY fmtnone.label "Lista plana">
+<!ENTITY fmtnone.accesskey "L">
+<!ENTITY fmtnumbered.label "Numerada">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Con viñetas">
+<!ENTITY fmtbulleted.accesskey "C">
+<!ENTITY alwaysask.label "Mostrar siempre la ventana al enviar">
+<!ENTITY alwaysask.accesskey "v">
+<!ENTITY sendTo.label "Enviar a:">
+<!ENTITY sendTo.accesskey "E">
+<!ENTITY mailClient.default "Cliente de correo por defecto">
+<!ENTITY mailClient.clipboard "Portapapeles">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Aplicaciones Google">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs - Opciones">
+<!ENTITY tabOptions "General">
+<!ENTITY tabClipboard "Portapapeles">
+<!ENTITY tabGoogleApps "Aplicaciones Google">
+<!ENTITY alwaysAskFmt.label "Preguntar siempre el formato de la lista de direcciones">
+<!ENTITY alwaysAskFmt.accesskey "s">
+<!ENTITY fmtSettings.label "Opciones ...">
+<!ENTITY fmtSettings.accesskey "O">
+<!ENTITY webMail "Web mail">
+<!ENTITY webmailNewTab.label "Abrir en una nueva pestaña">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "Abrir en una nueva ventana">
+<!ENTITY webmailNewWnd.accesskey "v">
+<!ENTITY showTabMenuCmd.label "Mostrar comando enviar direcciones de las pestañas en el menú listar todas las pestañas">
+<!ENTITY showTabMenuCmd.accesskey "o">
+<!ENTITY confirmCopy.label "Mostrar confirmación cuando la lista se copie al portapapeles">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "Incluir la cuenta de las direcciones">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "Colocar:">
+<!ENTITY placeIt.accesskey "C">
+<!ENTITY urlPos.above "encima de">
+<!ENTITY urlPos.below "debajo de">
+<!ENTITY urlList.label "la lista de direcciones">

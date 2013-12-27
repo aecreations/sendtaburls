@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs - Настройки">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Отправить URL табов...">
+<!ENTITY sendtabs.menuitem.accesskey "т">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Emails the URLs of all open browser tabs in the current window">
+<!---->
+<!ENTITY sendToClipboardConfirm "The URL list has been copied to the clipboard.">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps domain:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "">
+<!---->
+<!ENTITY fmtopts.caption "Параметры Формирования Сообщения">
+<!ENTITY fmtnone.label "Простой список">
+<!ENTITY fmtnone.accesskey "П">
+<!ENTITY fmtnumbered.label "Нумерованный список">
+<!ENTITY fmtnumbered.accesskey "Н">
+<!ENTITY fmtbulleted.label "Меченый список">
+<!ENTITY fmtbulleted.accesskey "М">
+<!ENTITY alwaysask.label "Всегда спрашивать о том как формировать список URL">
+<!ENTITY alwaysask.accesskey "В">
+<!ENTITY sendTo.label "Send to:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "Default email program">
+<!ENTITY mailClient.clipboard "Clipboard">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs Options">
+<!ENTITY tabOptions "General">
+<!ENTITY tabClipboard "Clipboard">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Always ask how I want the URL list formatted">
+<!ENTITY alwaysAskFmt.accesskey "A">
+<!ENTITY fmtSettings.label "Settings...">
+<!ENTITY fmtSettings.accesskey "S">
+<!ENTITY webMail "Web mail">
+<!ENTITY webmailNewTab.label "Open in new browser tab">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "Open in new browser window">
+<!ENTITY webmailNewWnd.accesskey "w">
+<!ENTITY showTabMenuCmd.label "">
+<!ENTITY showTabMenuCmd.accesskey "">
+<!ENTITY confirmCopy.label "Show confirmation when URL list is copied to clipboard">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "Include the URL count">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "Place it:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "above">
+<!ENTITY urlPos.below "below">
+<!ENTITY urlList.label "the URL list">

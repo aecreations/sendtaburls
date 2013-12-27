@@ -1,0 +1,30 @@
+# Firefox
+overlay	chrome://browser/content/browser.xul	chrome://sendtabs/content/sendtabsOverlay.xul
+
+# Browser toolbar button
+skin	sendtabs	classic/1.0	chrome/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://sendtabs/skin/sendtabsOverlay.css
+
+resource	sendtabs	./
+content	sendtabs	chrome/content/
+skin	sendtabs	classic/1.0	chrome/skin/
+
+locale	sendtabs	en-US	chrome/locale/en-US/
+#locale	sendtabs	ca-AD	chrome/locale/ca-AD/
+#locale	sendtabs	da	chrome/locale/da/
+locale	sendtabs	de	chrome/locale/de/
+locale	sendtabs	es-ES	chrome/locale/es-ES/
+#locale	sendtabs	fr	chrome/locale/fr/
+locale	sendtabs	he-IL	chrome/locale/he-IL/
+locale	sendtabs	it	chrome/locale/it/
+locale	sendtabs	ko-KR	chrome/locale/ko-KR/
+locale	sendtabs	nl	chrome/locale/nl/
+locale	sendtabs	pl	chrome/locale/pl/
+locale	sendtabs	pt-BR	chrome/locale/pt-BR/
+locale	sendtabs	sv-SE	chrome/locale/sv-SE/
+locale	sendtabs	zh-CN	chrome/locale/zh-CN/
+#locale	sendtabs	tr-TR	chrome/locale/tr-TR/
+#locale	sendtabs	ru-RU	chrome/locale/ru-RU/
+#locale	sendtabs	uk-UA	chrome/locale/uk-UA/
+#locale	sendtabs	zh-TW	chrome/locale/zh-TW/
+

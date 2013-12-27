@@ -1,0 +1,47 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is the Send Tab URLs extension for Mozilla Firefox.
+ *
+ * The Initial Developer of the Original Code is 
+ * Alex Eng <ateng@users.sourceforge.net>.
+ * Portions created by the Initial Developer are Copyright (C) 2006-2011
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+
+#ae-sendtabs-toolbarbutton {
+  list-style-image:   url("chrome://sendtabs/skin/img/sendtabsToolbar.png");
+  -moz-image-region:  rect(0px, 24px, 24px, 0px);
+}
+
+#ae-sendtabs-toolbarbutton:hover {
+  -moz-image-region: rect(0px, 48px, 24px, 24px);
+}
+
+#ae-sendtabs-tabmenu {
+  list-style-image:   url("chrome://sendtabs/skin/img/sendtabsToolbar.png");
+  -moz-image-region:  rect(24px, 16px, 40px, 0px);
+}
+
+toolbar[iconsize="small"] #ae-sendtabs-toolbarbutton {
+  list-style-image:   url("chrome://sendtabs/skin/img/sendtabsToolbar.png");
+  -moz-image-region:  rect(24px, 16px, 40px, 0px);
+}
+
+toolbar[iconsize="small"] #ae-sendtabs-toolbarbutton:hover {
+  -moz-image-region: rect(24px, 32px, 40px, 16px);
+}

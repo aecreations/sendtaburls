@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tabs URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Send faneblads-URLer">
+<!ENTITY sendtabs.menuitem.accesskey "d">
+<!ENTITY sendtabs.toolbarbutton.label "Send faneblads-URLer">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Send en liste med browser-fanebladenes URLer til email, webmail eller udklipsholderen">
+<!---->
+<!ENTITY sendToClipboardConfirm "URL-listen er blevet kopieret til udklipsholderen.">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps-domæne:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "Send til udklipsholder">
+<!---->
+<!ENTITY fmtopts.caption "Formatterings-indstillinger">
+<!ENTITY fmtnone.label "Almindelig liste">
+<!ENTITY fmtnone.accesskey "A">
+<!ENTITY fmtnumbered.label "Nummereret">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Punktopstillet">
+<!ENTITY fmtbulleted.accesskey "P">
+<!ENTITY alwaysask.label "Vis altid dialogboks ved afsendelse">
+<!ENTITY alwaysask.accesskey "V">
+<!ENTITY sendTo.label "Send til:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "Standard email-program">
+<!ENTITY mailClient.clipboard "Udklipsholder">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs indstillinger">
+<!ENTITY tabOptions "Generelt">
+<!ENTITY tabClipboard "Udklipsholder">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Spørg altid om, hvordan URL-listen skal formatteres">
+<!ENTITY alwaysAskFmt.accesskey "a">
+<!ENTITY fmtSettings.label "Indstillinger...">
+<!ENTITY fmtSettings.accesskey "I">
+<!ENTITY webMail "Webmail">
+<!ENTITY webmailNewTab.label "Åbn i nyt browser-faneblad">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "Åbn i nyt browservindue">
+<!ENTITY webmailNewWnd.accesskey "y">
+<!ENTITY showTabMenuCmd.label "">
+<!ENTITY showTabMenuCmd.accesskey "">
+<!ENTITY confirmCopy.label "Vis bekræftelse når URL-listen kopieres til udklipsholder">
+<!ENTITY confirmCopy.accesskey "b">
+<!ENTITY includeURLCount.label "Inkludér URL-antal">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "Placér det:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "over">
+<!ENTITY urlPos.below "under">
+<!ENTITY urlList.label "URL-listen">

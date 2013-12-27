@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "將分頁網址傳送至...">
+<!ENTITY sendtabs.menuitem.accesskey "d">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
+<!ENTITY sendtabs.toolbarbutton.tooltip "將瀏覽器中的分頁網址，列成表後丟進電子信箱、網路信箱或剪貼簿中。">
+<!---->
+<!ENTITY sendToClipboardConfirm "網址列表已經複製好到剪貼簿裡了。">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps 域名:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "丟進剪貼簿">
+<!---->
+<!ENTITY fmtopts.caption "列表格式選項">
+<!ENTITY fmtnone.label "原始格式">
+<!ENTITY fmtnone.accesskey "P">
+<!ENTITY fmtnumbered.label "數字列表">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "符號列表">
+<!ENTITY fmtbulleted.accesskey "B">
+<!ENTITY alwaysask.label "每次傳送時都問我要怎麼做">
+<!ENTITY alwaysask.accesskey "A">
+<!ENTITY sendTo.label "傳送至:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "預設的電子郵件軟體">
+<!ENTITY mailClient.clipboard "剪貼簿">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs 選項">
+<!ENTITY tabOptions "一般">
+<!ENTITY tabClipboard "剪貼簿">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "每次傳送時都問我要存成什麼格式">
+<!ENTITY alwaysAskFmt.accesskey "A">
+<!ENTITY fmtSettings.label "設定...">
+<!ENTITY fmtSettings.accesskey "S">
+<!ENTITY webMail "Web 信箱">
+<!ENTITY webmailNewTab.label "在新分頁中開啟">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "在新視窗中開啟">
+<!ENTITY webmailNewWnd.accesskey "w">
+<!ENTITY showTabMenuCmd.label "">
+<!ENTITY showTabMenuCmd.accesskey "">
+<!ENTITY confirmCopy.label "複製好後跟我說一聲">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "一併計算網址數量">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "放置在:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "前於">
+<!ENTITY urlPos.below "後於">
+<!ENTITY urlList.label "網址列表">

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://sendtabs/locale/sendtabs.dtd">
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is Send Tab URLs.
+   -
+   - The Initial Developer of the Original Code is
+   - Alex Eng <ateng@users.sourceforge.net>.
+   - Portions created by the Initial Developer are Copyright (C) 2008
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<dialog id="ae-sendtabs-google-apps-domain"
+ title="&sendtabs.appName;"
+ orient="vertical"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+ buttons="accept,cancel"
+ onload="initDlg()" ondialogaccept="return doOK()"
+ ondialogcancel="return doCancel()">
+
+  <script type="application/javascript">
+  <![CDATA[
+
+    var gAcceptBtn;
+
+    function initDlg() {
+      var dlg = document.getElementById("ae-sendtabs-google-apps-domain");
+      gAcceptBtn = dlg.getButton("accept");
+      gAcceptBtn.disabled = true;
+    }
+
+    function toggleAcceptBtnState(aTextbox) {
+      gAcceptBtn.disabled = aTextbox.textLength == 0;
+    }
+
+    function doOK() {
+      var textbox = document.getElementById("gapps-domain");
+      var domain = textbox.value;
+      if (! domain) {
+        textbox.focus();
+        return false;
+      }
+
+      window.arguments[0].googleAppsDomain = domain;
+      return true;
+    }
+
+    function doCancel() {
+      return true;
+    }
+
+  ]]>
+  </script>
+
+  <separator class="thin"/>
+  <label control="gapps-domain" value="&googAppsDomain.label;"
+   accesskey="&googAppsDomain.accesskey;"/>
+  <textbox id="gapps-domain" oninput="toggleAcceptBtnState(this)"
+   style="width:24em"/>
+  <separator />
+
+</dialog>

@@ -1,0 +1,55 @@
+<!-- General -->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!-- Overlay -->
+<!ENTITY sendtabs.menuitem.label "Invia link delle schede…">
+<!ENTITY sendtabs.menuitem.accesskey "s">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Invia tramite e-mail o copia negli appunti gli indirizzi di tutte le schede aperte nella finestra attuale">
+<!-- Send To Clipboard confirmation dialog -->
+<!ENTITY sendToClipboardConfirm "L&apos;elenco degli indirizzi web è stato copiato negli appunti">
+<!-- Google Apps domain prompt -->
+<!ENTITY googAppsDomain.label "Dominio di Google Apps:">
+<!ENTITY googAppsDomain.accesskey "D">
+<!-- Gmail/Google Apps long URL list -->
+<!ENTITY sendToClipboard.label "Copia negli appunti">
+<!-- Send Tab URLs dialog -->
+<!ENTITY fmtopts.caption "Formattazione dell&apos;elenco di indirizzi web">
+<!ENTITY fmtnone.label "Elenco semplice">
+<!ENTITY fmtnone.accesskey "s">
+<!ENTITY fmtnumbered.label "Elenco numerato">
+<!ENTITY fmtnumbered.accesskey "m">
+<!ENTITY fmtbulleted.label "Elenco puntato">
+<!ENTITY fmtbulleted.accesskey "u">
+<!ENTITY alwaysask.label "Mostra sempre questa finestra">
+<!ENTITY alwaysask.accesskey "o">
+<!ENTITY sendTo.label "L&apos;elenco degli indirizzi web verrà">
+<!ENTITY sendTo.accesskey "L">
+<!ENTITY mailClient.default "inviato con il programma di posta predefinito">
+<!ENTITY mailClient.clipboard "copiato negli appunti">
+<!ENTITY mailClient.gmail "inviato con Gmail">
+<!ENTITY mailClient.googleAppsGmail "inviato con Google Apps">
+<!-- Extension preferences dialog -->
+<!ENTITY sendtabsPrefDlg.title "Opzioni di Send Tab URLs">
+<!ENTITY tabOptions "Generali">
+<!ENTITY tabClipboard "Appunti">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Chiedi sempre come formattare l&apos;elenco degli indirizzi web">
+<!ENTITY alwaysAskFmt.accesskey "C">
+<!ENTITY fmtSettings.label "Impostazioni…">
+<!ENTITY fmtSettings.accesskey "I">
+<!ENTITY webMail "Invio e-mail tramite browser">
+<!ENTITY webmailNewTab.label "Apri una nuova scheda">
+<!ENTITY webmailNewTab.accesskey "s">
+<!ENTITY webmailNewWnd.label "Apri una nuova finestra">
+<!ENTITY webmailNewWnd.accesskey "f">
+<!ENTITY showTabMenuCmd.label "Mostra la voce &apos;Invia link delle schede…&apos; nel menu del pulsante &apos;Elenco di tutte le schede&apos;">
+<!ENTITY showTabMenuCmd.accesskey "o">
+<!ENTITY confirmCopy.label "Mostra un avviso quando l&apos;elenco degli indirizzi web viene copiato negli appunti">
+<!ENTITY confirmCopy.accesskey "M">
+<!ENTITY includeURLCount.label "Includi l&apos;oggetto dell&apos;e-mail">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "Posizionalo">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "in cima">
+<!ENTITY urlPos.below "in fondo">
+<!ENTITY urlList.label "all&apos;elenco degli indirizzi web">

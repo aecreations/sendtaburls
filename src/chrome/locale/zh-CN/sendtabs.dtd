@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "发送标签页网址">
+<!---->
+<!ENTITY sendtabs.menuitem.label "发送标签页网址...">
+<!ENTITY sendtabs.menuitem.accesskey "d">
+<!ENTITY sendtabs.toolbarbutton.label "发送标签页网址">
+<!ENTITY sendtabs.toolbarbutton.tooltip "发送浏览器标签页的网址列表到电子邮箱、Web邮件，或剪贴板">
+<!---->
+<!ENTITY sendToClipboardConfirm "网址列表已复制到剪贴板。">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps 域名：">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "发送到剪贴板">
+<!---->
+<!ENTITY fmtopts.caption "格式选项">
+<!ENTITY fmtnone.label "文本列表">
+<!ENTITY fmtnone.accesskey "P">
+<!ENTITY fmtnumbered.label "数字列表">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "方块列表">
+<!ENTITY fmtbulleted.accesskey "B">
+<!ENTITY alwaysask.label "发送时总是显示对话框">
+<!ENTITY alwaysask.accesskey "A">
+<!ENTITY sendTo.label "发送到：">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "默认的电子邮件程序">
+<!ENTITY mailClient.clipboard "剪贴板">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs 选项">
+<!ENTITY tabOptions "常规">
+<!ENTITY tabClipboard "剪贴板">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "总是询问我想要哪种网址列表格式">
+<!ENTITY alwaysAskFmt.accesskey "A">
+<!ENTITY fmtSettings.label "设置...">
+<!ENTITY fmtSettings.accesskey "S">
+<!ENTITY webMail "Web 邮件">
+<!ENTITY webmailNewTab.label "在新标签页打开">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "在新窗口打开">
+<!ENTITY webmailNewWnd.accesskey "w">
+<!ENTITY showTabMenuCmd.label "在“所有标签页”菜单中显示“发送标签页网址”命令">
+<!ENTITY showTabMenuCmd.accesskey "o">
+<!ENTITY confirmCopy.label "复制网址列表到剪贴板时显示确认">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "包括网址计数">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "位置：">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "上面">
+<!ENTITY urlPos.below "下面">
+<!ENTITY urlList.label "于网址列表">

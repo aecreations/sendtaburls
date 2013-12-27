@@ -1,0 +1,62 @@
+<!-- General -->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+
+<!-- Overlay -->
+<!ENTITY sendtabs.menuitem.label "Send Tab URLs...">
+<!ENTITY sendtabs.menuitem.accesskey "d">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Send a list of browser tab URLs to email, Web mail, or the clipboard">
+
+<!-- Send To Clipboard confirmation dialog -->
+<!ENTITY sendToClipboardConfirm "The URL list has been copied to the clipboard.">
+
+<!-- Google Apps domain prompt -->
+<!ENTITY googAppsDomain.label "Google Apps domain:">
+<!ENTITY googAppsDomain.accesskey "d">
+
+<!-- Gmail/Google Apps long URL list -->
+<!ENTITY sendToClipboard.label "Send To Clipboard">
+
+<!-- Send Tab URLs dialog -->
+<!ENTITY fmtopts.caption "Formatting Options">
+<!ENTITY fmtnone.label "Plain list">
+<!ENTITY fmtnone.accesskey "P">
+<!ENTITY fmtnumbered.label "Numbered">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Bulleted">
+<!ENTITY fmtbulleted.accesskey "B">
+<!ENTITY alwaysask.label "Always show dialog when sending">
+<!ENTITY alwaysask.accesskey "A">
+<!ENTITY sendTo.label "Send to:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "Default email program">
+<!ENTITY mailClient.clipboard "Clipboard">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+
+<!-- Extension preferences dialog -->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs Options">
+<!ENTITY tabOptions "General">
+<!ENTITY tabClipboard "Clipboard">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Always ask how I want the URL list formatted">
+<!ENTITY alwaysAskFmt.accesskey "A">
+<!ENTITY fmtSettings.label "Settings...">
+<!ENTITY fmtSettings.accesskey "S">
+<!ENTITY webMail "Web mail">
+<!ENTITY webmailNewTab.label "Open in new browser tab">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "Open in new browser window">
+<!ENTITY webmailNewWnd.accesskey "w">
+<!ENTITY showTabMenuCmd.label "Show Send Tab URLs command in the List All Tabs menu">
+<!ENTITY showTabMenuCmd.accesskey "o">
+<!ENTITY confirmCopy.label "Show confirmation when URL list is copied to clipboard">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "Include the URL count">
+<!ENTITY includeURLCount.accesskey "I">
+<!ENTITY placeIt.label "Place it:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "above">
+<!ENTITY urlPos.below "below">
+<!ENTITY urlList.label "the URL list">
+

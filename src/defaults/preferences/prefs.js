@@ -1,0 +1,12 @@
+pref("sendtabs.message.format.list_style", 0);
+pref("sendtabs.message.format.always_ask", true);
+pref("sendtabs.mailclient", 0);
+pref("sendtabs.mailclient.googleapps.enabled", false);
+pref("sendtabs.mailclient.googleapps.domain", "");
+pref("sendtabs.mailclient.clipboard.url_count_position", 1);
+pref("sendtabs.mailclient.clipboard.confirm_copy", true);
+pref("sendtabs.webmail.open_in_new_window", false);
+pref("sendtabs.webmail.window_features", "");
+pref("sendtabs.show_tab_menu_command", true);
+pref("sendtabs.reload_pending_tabs", true);
+pref("extensions.{4aebcd37-f454-4928-9233-174a026ed367}.description", "chrome://sendtabs/locale/sendtabs.properties");

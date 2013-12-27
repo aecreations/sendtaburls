@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://sendtabs/skin/formatOpts.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://sendtabs/locale/sendtabs.dtd">
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is Send Tab URLs.
+   -
+   - The Initial Developer of the Original Code is
+   - Alex Eng <ateng@users.sourceforge.net>.
+   - Portions created by the Initial Developer are Copyright (C) 2006-2011
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+
+<dialog id="ae-sendtabs-format-options-dialog" 
+ title="&sendtabs.appName;"
+ orient="vertical"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+ buttons="accept,cancel"
+ onload="initDlg()" ondialogaccept="return doOK()"
+ ondialogcancel="return doCancel()">
+
+  <script type="application/javascript" src="chrome://sendtabs/content/formatOpts.js"/>
+
+  <stringbundle id="ae-sendtabs-strings"
+   src="chrome://sendtabs/locale/sendtabs.properties"/>
+
+  <groupbox style="min-width:21em">
+    <caption label="&fmtopts.caption;" />
+
+    <hbox>
+    <radiogroup id="format-radiogroup" flex="1">
+      <radio label="&fmtnone.label;" accesskey="&fmtnone.accesskey;"
+       oncommand="setPreviewImage(FMTOPT_NO_FORMATTING)"/>
+      <radio label="&fmtnumbered.label;" accesskey="&fmtnumbered.accesskey;"
+       oncommand="setPreviewImage(FMTOPT_NUMBERED)"/>
+      <radio label="&fmtbulleted.label;" accesskey="&fmtbulleted.accesskey;"
+       oncommand="setPreviewImage(FMTOPT_BULLETED)"/>
+    </radiogroup>
+    <box flex="2"/>
+    <vbox>
+      <box flex="1"/>
+      <image id="preview-thumbnail" onclick="cycleFormat()"/>
+      <box flex="1"/>
+    </vbox>
+    <box flex="1"/>
+    </hbox>
+  </groupbox>
+
+  <grid>
+    <columns>
+      <column/>
+      <column flex="1"/>
+    </columns>
+    <rows>
+      <row align="center">
+        <label value="&sendTo.label;" accesskey="&sendTo.accesskey;" 
+	 control="mail-client"/>
+	<menulist id="mail-client">
+	  <menupopup>
+	    <menuitem label="&mailClient.default;"/>
+	    <menuitem label="&mailClient.clipboard;"/>
+	    <menuitem label="&mailClient.gmail;"/>
+	    <menuitem label="&mailClient.googleAppsGmail;" 
+	     hidden="true" id="googapps" />
+          </menupopup>
+        </menulist>
+      </row>
+    </rows>
+  </grid>
+  <separator class="thin"/>
+
+  <checkbox id="always-ask" label="&alwaysask.label;" accesskey="&alwaysask.accesskey;"/>
+
+  <separator class="thin"/>
+
+</dialog>

@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs - Einstellungen">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Tab-Adressen senden…">
+<!ENTITY sendtabs.menuitem.accesskey "r">
+<!ENTITY sendtabs.toolbarbutton.label "Tab-URLs senden">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Die Adressliste aller offenen Tabs an eine E-Mail-Anwendung, Webmail oder die Zwischenablage übergeben">
+<!---->
+<!ENTITY sendToClipboardConfirm "Die Adressliste wurde erfolgreich in die Zwischenablage kopiert.">
+<!---->
+<!ENTITY googAppsDomain.label "Domain-Namen Ihrer Organisation für Google Apps angeben:">
+<!ENTITY googAppsDomain.accesskey "D">
+<!---->
+<!ENTITY sendToClipboard.label "An Zwischenablage senden">
+<!---->
+<!ENTITY fmtopts.caption "E-Mail-Format für Adresslisten">
+<!ENTITY fmtnone.label "Liste ohne Gliederungszeichen">
+<!ENTITY fmtnone.accesskey "o">
+<!ENTITY fmtnumbered.label "Nummerierte Liste">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Liste mit Gliederungszeichen">
+<!ENTITY fmtbulleted.accesskey "m">
+<!ENTITY alwaysask.label "Immer nach der Formatierung fragen">
+<!ENTITY alwaysask.accesskey "I">
+<!ENTITY sendTo.label "Senden an:">
+<!ENTITY sendTo.accesskey "s">
+<!ENTITY mailClient.default "Standard E-Mail-Anwendung">
+<!ENTITY mailClient.clipboard "Zwischenablage">
+<!ENTITY mailClient.gmail "Google Mail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs - Einstellungen">
+<!ENTITY tabOptions "Allgemein">
+<!ENTITY tabClipboard "Zwischenablage">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Immer fragen wie die Adressliste formatiert werden soll">
+<!ENTITY alwaysAskFmt.accesskey "i">
+<!ENTITY fmtSettings.label "Einstellungen...">
+<!ENTITY fmtSettings.accesskey "E">
+<!ENTITY webMail "Webmail">
+<!ENTITY webmailNewTab.label "In einem neuem Tab öffnen">
+<!ENTITY webmailNewTab.accesskey "T">
+<!ENTITY webmailNewWnd.label "In einem neuen Fenster öffnen">
+<!ENTITY webmailNewWnd.accesskey "f">
+<!ENTITY showTabMenuCmd.label "&quot;Tab-Adressen senden&quot; im Menü &quot;Alle Tabs auflisten&quot; anzeigen">
+<!ENTITY showTabMenuCmd.accesskey "a">
+<!ENTITY confirmCopy.label "Bestätigung anzeigen, wenn Adressliste in die Zwischenablage kopiert wurde">
+<!ENTITY confirmCopy.accesskey "k">
+<!ENTITY includeURLCount.label "Einschließlich Adresszähler">
+<!ENTITY includeURLCount.accesskey "E">
+<!ENTITY placeIt.label "Position:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "oberhalb">
+<!ENTITY urlPos.below "unterhalb">
+<!ENTITY urlList.label "der Adressliste">

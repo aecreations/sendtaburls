@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Wyślij adresy URL kart...">
+<!ENTITY sendtabs.menuitem.accesskey "k">
+<!ENTITY sendtabs.toolbarbutton.label "Wyślij adresy kart">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Wysyła w wiadomości e-mail adresy URL wszystkich aktualnie otwartych kart.">
+<!---->
+<!ENTITY sendToClipboardConfirm "Lista adresów URL została skopiowana do schowka.">
+<!---->
+<!ENTITY googAppsDomain.label "Domena w Google Apps:">
+<!ENTITY googAppsDomain.accesskey "D">
+<!---->
+<!ENTITY sendToClipboard.label "Wyślij do schowka">
+<!---->
+<!ENTITY fmtopts.caption "Opcje formatowania e-maili">
+<!ENTITY fmtnone.label "Zwykła lista">
+<!ENTITY fmtnone.accesskey "Z">
+<!ENTITY fmtnumbered.label "Lista numerowana">
+<!ENTITY fmtnumbered.accesskey "n">
+<!ENTITY fmtbulleted.label "Lista wypunktowana">
+<!ENTITY fmtbulleted.accesskey "w">
+<!ENTITY alwaysask.label "Zawsze pytaj o sposób formatowania listy adresów">
+<!ENTITY alwaysask.accesskey "p">
+<!ENTITY sendTo.label "Wyślij do:">
+<!ENTITY sendTo.accesskey "S">
+<!ENTITY mailClient.default "domyślnego programu pocztowego">
+<!ENTITY mailClient.clipboard "schowka">
+<!ENTITY mailClient.gmail "Gmaila">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs - opcje">
+<!ENTITY tabOptions "Ogólne">
+<!ENTITY tabClipboard "Schowek">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Zawsze pytaj jak chcę sformatować listę adresów URL">
+<!ENTITY alwaysAskFmt.accesskey "Z">
+<!ENTITY fmtSettings.label "Ustawienia...">
+<!ENTITY fmtSettings.accesskey "U">
+<!ENTITY webMail "Programy pocztowe działające w przeglądarce">
+<!ENTITY webmailNewTab.label "Otwieraj w nowej karcie">
+<!ENTITY webmailNewTab.accesskey "k">
+<!ENTITY webmailNewWnd.label "Otwieraj w nowym oknie">
+<!ENTITY webmailNewWnd.accesskey "o">
+<!ENTITY showTabMenuCmd.label "Wyświetlaj pozycję &quot;Wyślij adresy URL kart...&quot; w menu &quot;Pokaż wszystkie karty&quot;">
+<!ENTITY showTabMenuCmd.accesskey "P">
+<!ENTITY confirmCopy.label "Wyświetlaj potwierdzenie przy kopiowaniu listy adresów URL do schowka">
+<!ENTITY confirmCopy.accesskey "p">
+<!ENTITY includeURLCount.label "Dołączaj liczbę adresów URL">
+<!ENTITY includeURLCount.accesskey "D">
+<!ENTITY placeIt.label "Umieszczaj ją:">
+<!ENTITY placeIt.accesskey "U">
+<!ENTITY urlPos.above "nad">
+<!ENTITY urlPos.below "pod">
+<!ENTITY urlList.label "listą adresów URL">

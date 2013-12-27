@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Tabblad-URL’s versturen…">
+<!ENTITY sendtabs.menuitem.accesskey "v">
+<!ENTITY sendtabs.toolbarbutton.label "Tabblad-URL’s versturen">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Verstuurt de URL’s van alle openstaande tabbladen in het huidige browservenster naar e-mail, webmail of het Klembord">
+<!---->
+<!ENTITY sendToClipboardConfirm "De lijst met URL’s is naar het Klembord gekopieerd.">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps-domein:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "Naar Klembord versturen">
+<!---->
+<!ENTITY fmtopts.caption "Opmaakopties">
+<!ENTITY fmtnone.label "Gewone lijst">
+<!ENTITY fmtnone.accesskey "w">
+<!ENTITY fmtnumbered.label "Genummerd">
+<!ENTITY fmtnumbered.accesskey "n">
+<!ENTITY fmtbulleted.label "Met aandachtsbolletjes">
+<!ENTITY fmtbulleted.accesskey "b">
+<!ENTITY alwaysask.label "Altijd dialoogvenster weergeven bij versturen">
+<!ENTITY alwaysask.accesskey "A">
+<!ENTITY sendTo.label "Verzenden naar:">
+<!ENTITY sendTo.accesskey "z">
+<!ENTITY mailClient.default "Standaard e-mailprogramma">
+<!ENTITY mailClient.clipboard "Klembord">
+<!ENTITY mailClient.gmail "GMail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs-opties">
+<!ENTITY tabOptions "Algemeen">
+<!ENTITY tabClipboard "Klembord">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Altijd vragen hoe ik de lijst met URL’s wil opmaken">
+<!ENTITY alwaysAskFmt.accesskey "A">
+<!ENTITY fmtSettings.label "Instellingen…">
+<!ENTITY fmtSettings.accesskey "s">
+<!ENTITY webMail "Webmail">
+<!ENTITY webmailNewTab.label "In nieuw tabblad openen">
+<!ENTITY webmailNewTab.accesskey "t">
+<!ENTITY webmailNewWnd.label "In nieuw venster openen">
+<!ENTITY webmailNewWnd.accesskey "v">
+<!ENTITY showTabMenuCmd.label "Send Tab URLs-opdracht in menu Alle tabbladen in lijst weergeven">
+<!ENTITY showTabMenuCmd.accesskey "w">
+<!ENTITY confirmCopy.label "Bevestiging vragen wanneer lijst met URL’s naar het Klembord wordt gekopieerd">
+<!ENTITY confirmCopy.accesskey "B">
+<!ENTITY includeURLCount.label "Aantal URL’s opnemen">
+<!ENTITY includeURLCount.accesskey "O">
+<!ENTITY placeIt.label "Plaats:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "boven">
+<!ENTITY urlPos.below "onder">
+<!ENTITY urlList.label "de lijst met URL’s">

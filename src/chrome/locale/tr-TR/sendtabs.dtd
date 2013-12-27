@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Sekme URL'lerini Gönder...">
+<!ENTITY sendtabs.menuitem.accesskey "S">
+<!ENTITY sendtabs.toolbarbutton.label "Sekme URL'lerini Gönder">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Şu anki penceredeki tüm açık tarayıcı sekmelerinin URL'lerini epostayla göndermenizi sağlar.">
+<!---->
+<!ENTITY sendToClipboardConfirm "URL listesi panoya kopyalandı.">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps alanı:">
+<!ENTITY googAppsDomain.accesskey "a">
+<!---->
+<!ENTITY sendToClipboard.label "Panoya Gönder">
+<!---->
+<!ENTITY fmtopts.caption "Eposta Biçimlendirme Seçenekleri">
+<!ENTITY fmtnone.label "Düz liste">
+<!ENTITY fmtnone.accesskey "D">
+<!ENTITY fmtnumbered.label "Numaralı">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Maddeler Halinde">
+<!ENTITY fmtbulleted.accesskey "M">
+<!ENTITY alwaysask.label "Gönderirken her zaman diyalog penceresi göster">
+<!ENTITY alwaysask.accesskey "G">
+<!ENTITY sendTo.label "Şuraya Gönder:">
+<!ENTITY sendTo.accesskey "G">
+<!ENTITY mailClient.default "Varsayılan eposta programı">
+<!ENTITY mailClient.clipboard "Pano">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs Seçenekleri">
+<!ENTITY tabOptions "Genel">
+<!ENTITY tabClipboard "Pano">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "URL listesinin nasıl biçimlendirileceğini hep sor">
+<!ENTITY alwaysAskFmt.accesskey "H">
+<!ENTITY fmtSettings.label "Ayarlar...">
+<!ENTITY fmtSettings.accesskey "A">
+<!ENTITY webMail "Web posta">
+<!ENTITY webmailNewTab.label "Yeni tarayıcı sekmesinde aç">
+<!ENTITY webmailNewTab.accesskey "s">
+<!ENTITY webmailNewWnd.label "Yeni tarayıcı penceresinde aç">
+<!ENTITY webmailNewWnd.accesskey "p">
+<!ENTITY showTabMenuCmd.label "">
+<!ENTITY showTabMenuCmd.accesskey "">
+<!ENTITY confirmCopy.label "URL listesi panoya kopyalanacağı zaman onay al">
+<!ENTITY confirmCopy.accesskey "o">
+<!ENTITY includeURLCount.label "URL sayısını dahil et">
+<!ENTITY includeURLCount.accesskey "d">
+<!ENTITY placeIt.label "Yerleştir:">
+<!ENTITY placeIt.accesskey "Y">
+<!ENTITY urlPos.above "üstüne">
+<!ENTITY urlPos.below "altına">
+<!ENTITY urlList.label "URL listesi">

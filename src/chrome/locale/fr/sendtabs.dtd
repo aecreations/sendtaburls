@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "Send Tab URLs...">
+<!ENTITY sendtabs.menuitem.accesskey "E">
+<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Envoi par courriel les URL de tous les onglets ouverts dans la fenêtre active">
+<!---->
+<!ENTITY sendToClipboardConfirm "La liste d'URL a été copiée dans le presse-papier.">
+<!---->
+<!ENTITY googAppsDomain.label "Google Apps domain:">
+<!ENTITY googAppsDomain.accesskey "d">
+<!---->
+<!ENTITY sendToClipboard.label "Envoyer au presse-papier">
+<!---->
+<!ENTITY fmtopts.caption "Options de mise en forme du courriel">
+<!ENTITY fmtnone.label "Liste simple">
+<!ENTITY fmtnone.accesskey "S">
+<!ENTITY fmtnumbered.label "Liste numéroté">
+<!ENTITY fmtnumbered.accesskey "N">
+<!ENTITY fmtbulleted.label "Liste à puce">
+<!ENTITY fmtbulleted.accesskey "P">
+<!ENTITY alwaysask.label "Toujours afficher cette boite de dialogue avant d'envoyer">
+<!ENTITY alwaysask.accesskey "T">
+<!ENTITY sendTo.label "Envoyer à:">
+<!ENTITY sendTo.accesskey "E">
+<!ENTITY mailClient.default "Client de messagerie par défaut">
+<!ENTITY mailClient.clipboard "Presse-papier">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "Options de &quot;Send Tab URLs&quot;">
+<!ENTITY tabOptions "Général">
+<!ENTITY tabClipboard "Presse-papier">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "Toujours demander comment je souhaite formatter la liste d'URL.">
+<!ENTITY alwaysAskFmt.accesskey "T">
+<!ENTITY fmtSettings.label "Paramètres...">
+<!ENTITY fmtSettings.accesskey "P">
+<!ENTITY webMail "Webmail">
+<!ENTITY webmailNewTab.label "Ouvrir dans un nouvel onglet">
+<!ENTITY webmailNewTab.accesskey "o">
+<!ENTITY webmailNewWnd.label "Ouvrir dans une nouvelle fenêtre">
+<!ENTITY webmailNewWnd.accesskey "f">
+<!ENTITY showTabMenuCmd.label "">
+<!ENTITY showTabMenuCmd.accesskey "">
+<!ENTITY confirmCopy.label "Afficher une confirmation quand la liste d'URL est copiée dans le presse-papier">
+<!ENTITY confirmCopy.accesskey "c">
+<!ENTITY includeURLCount.label "Inclure le nombre d'URL">
+<!ENTITY includeURLCount.accesskey "i">
+<!ENTITY placeIt.label "Placer ici:">
+<!ENTITY placeIt.accesskey "P">
+<!ENTITY urlPos.above "dessus">
+<!ENTITY urlPos.below "dessous">
+<!ENTITY urlList.label "la liste d'URL">

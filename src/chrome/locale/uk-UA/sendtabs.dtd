@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "">
+<!ENTITY sendtabs.menuitem.accesskey "">
+<!ENTITY sendtabs.toolbarbutton.label "">
+<!ENTITY sendtabs.toolbarbutton.tooltip "">
+<!---->
+<!ENTITY sendToClipboardConfirm "">
+<!---->
+<!ENTITY googAppsDomain.label "">
+<!ENTITY googAppsDomain.accesskey "">
+<!---->
+<!ENTITY sendToClipboard.label "">
+<!---->
+<!ENTITY fmtopts.caption "">
+<!ENTITY fmtnone.label "">
+<!ENTITY fmtnone.accesskey "">
+<!ENTITY fmtnumbered.label "">
+<!ENTITY fmtnumbered.accesskey "">
+<!ENTITY fmtbulleted.label "">
+<!ENTITY fmtbulleted.accesskey "">
+<!ENTITY alwaysask.label "">
+<!ENTITY alwaysask.accesskey "">
+<!ENTITY sendTo.label "">
+<!ENTITY sendTo.accesskey "">
+<!ENTITY mailClient.default "">
+<!ENTITY mailClient.clipboard "">
+<!ENTITY mailClient.gmail "Gmail">
+<!ENTITY mailClient.googleAppsGmail "Google Apps">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "">
+<!ENTITY tabOptions "Загальні">
+<!ENTITY tabClipboard "">
+<!ENTITY tabGoogleApps "Google Apps">
+<!ENTITY alwaysAskFmt.label "">
+<!ENTITY alwaysAskFmt.accesskey "">
+<!ENTITY fmtSettings.label "Налаштування...">
+<!ENTITY fmtSettings.accesskey "">
+<!ENTITY webMail "">
+<!ENTITY webmailNewTab.label "">
+<!ENTITY webmailNewTab.accesskey "">
+<!ENTITY webmailNewWnd.label "">
+<!ENTITY webmailNewWnd.accesskey "">
+<!ENTITY showTabMenuCmd.label "">
+<!ENTITY showTabMenuCmd.accesskey "">
+<!ENTITY confirmCopy.label "">
+<!ENTITY confirmCopy.accesskey "">
+<!ENTITY includeURLCount.label "">
+<!ENTITY includeURLCount.accesskey "">
+<!ENTITY placeIt.label "">
+<!ENTITY placeIt.accesskey "">
+<!ENTITY urlPos.above "">
+<!ENTITY urlPos.below "">
+<!ENTITY urlList.label "">

@@ -1,0 +1,55 @@
+<!---->
+<!ENTITY sendtabs.appName "Send Tab URLs">
+<!---->
+<!ENTITY sendtabs.menuitem.label "שלח כתובות URL של הלשוניות...">
+<!ENTITY sendtabs.menuitem.accesskey "ש">
+<!ENTITY sendtabs.toolbarbutton.label "שלח כתובות URL של הלשוניות">
+<!ENTITY sendtabs.toolbarbutton.tooltip "שליחה של רשימת הלשוניות בדפדפן לכתובת דואר אלקטרוני או העתקתם אל לוח העריכה">
+<!---->
+<!ENTITY sendToClipboardConfirm "רשימת כתובות האינטרנט הועתקו אל לוח העריכה.">
+<!---->
+<!ENTITY googAppsDomain.label "תחום יישומי גוגל:">
+<!ENTITY googAppsDomain.accesskey "ת">
+<!---->
+<!ENTITY sendToClipboard.label "של אל לוח העריכה (העתקה)">
+<!---->
+<!ENTITY fmtopts.caption "אפשרויות עיצוב">
+<!ENTITY fmtnone.label "רשימה פשוטה">
+<!ENTITY fmtnone.accesskey "ר">
+<!ENTITY fmtnumbered.label "ממוספר">
+<!ENTITY fmtnumbered.accesskey "ס">
+<!ENTITY fmtbulleted.label "תבליטים">
+<!ENTITY fmtbulleted.accesskey "ב">
+<!ENTITY alwaysask.label "הצג תמיד תיבת דו-שיח בעת השליחה">
+<!ENTITY alwaysask.accesskey "מ">
+<!ENTITY sendTo.label "שלח ל:">
+<!ENTITY sendTo.accesskey "ש">
+<!ENTITY mailClient.default "תוכנת דוא&quot;ל המוגדרת כברירת המחדל">
+<!ENTITY mailClient.clipboard "לוח העריכה (העתקה)">
+<!ENTITY mailClient.gmail "ג\'ימייל">
+<!ENTITY mailClient.googleAppsGmail "יישומי גוגל">
+<!---->
+<!ENTITY sendtabsPrefDlg.title "אפשרויות Send Tab URLs">
+<!ENTITY tabOptions "כללי">
+<!ENTITY tabClipboard "לוח העריכה (העתקה)">
+<!ENTITY tabGoogleApps "יישומי גוגל">
+<!ENTITY alwaysAskFmt.label "שאל אותי תמיד כיצד ברצוני להציג את עיצוב רשימת הקישורים">
+<!ENTITY alwaysAskFmt.accesskey "ת">
+<!ENTITY fmtSettings.label "הגדרות...">
+<!ENTITY fmtSettings.accesskey "ג">
+<!ENTITY webMail "דואר אינטרנט">
+<!ENTITY webmailNewTab.label "פתח בלשונית חדשה">
+<!ENTITY webmailNewTab.accesskey "פ">
+<!ENTITY webmailNewWnd.label "פתח בחלון חדש">
+<!ENTITY webmailNewWnd.accesskey "ח">
+<!ENTITY showTabMenuCmd.label "הצג את פקודת Send Tab URLs בתפריט של רשימת כל הכרטיסיות">
+<!ENTITY showTabMenuCmd.accesskey "צ">
+<!ENTITY confirmCopy.label "הצג הודעה המאשרת שרשימת הכתובות הועתקו אל לוח העריכה">
+<!ENTITY confirmCopy.accesskey "א">
+<!ENTITY includeURLCount.label "כלול את סך הכתובות">
+<!ENTITY includeURLCount.accesskey "כ">
+<!ENTITY placeIt.label "מקם את זה:">
+<!ENTITY placeIt.accesskey "ק">
+<!ENTITY urlPos.above "מעל">
+<!ENTITY urlPos.below "מתחת">
+<!ENTITY urlList.label "לרשימת הכתובות">
