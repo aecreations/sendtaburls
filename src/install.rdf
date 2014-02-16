@@ -11,7 +11,7 @@
     <em:description>Send a list of browser tab URLs to email, Web mail, or the clipboard.</em:description>
     <em:creator>AE Creations</em:creator>
     <em:contributor>Babelzilla Translators</em:contributor>
-    <em:homepageURL>http://aecreations.mozdev.org/</em:homepageURL>
+    <em:homepageURL>http://aecreations.sourceforge.net/</em:homepageURL>
     <em:optionsURL>chrome://sendtabs/content/preferences.xul</em:optionsURL>
     <em:updateURL>https://www.mozdev.org/p/updates/aecreations/%7B4aebcd37-f454-4928-9233-174a026ed367%7D/update.rdf</em:updateURL>
 
