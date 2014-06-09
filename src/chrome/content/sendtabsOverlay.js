@@ -56,39 +56,6 @@ window.aecreations.sendtaburls = {
   _strBundle:  null,
   pendingTabs: [],
 
-  // Instance of nsIWebProgressListener
-  _webProgressListener: {
-    onStateChange: function (aBrowser, aWebProgress, aRequest, aStateFlags, aStatus) {
-      let sendTabURLs = window.aecreations.sendtaburls;
-      if (sendTabURLs.pendingTabs.length == 0) {
-	return;
-      }
-
-      if ((aStateFlags & 0x00000010)  // nsIWebProgressListener.STATE_STOP
-	  && (aStateFlags & 0x00040000)) {  // nsIWebProgressListener.STATE_IS_NETWORK
-	for (let i = 0; i < sendTabURLs.pendingTabs.length; i++) {
-	  if (sendTabURLs.pendingTabs[i] == aBrowser) {
-	    sendTabURLs.pendingTabs.splice(i, 1);
-	  }
-	}
-      }
-
-      // Invoke the send tabs action when all pending tabs have been reloaded.
-      if (sendTabURLs.pendingTabs.length == 0) {
-	sendTabURLs.aeUtils.log("All pending tabs have been reloaded!");
-	sendTabURLs.sendTabsHelper();
-      }
-    },
-
-    onLocationChange: function (aBrowser, aWebProgress, aRequest, aLocation, aFlags) {},
-    onProgressChange: function (aBrowser, aWebProgress, aRequest, aCurSelfProgress, aMaxSelfProgress, aCurTotalProgress, aMaxTotalProgress) {},
-    onSecurityChange: function (aBrowser, aWebProgress, aRequest, aState) {},
-    onStatusChange: function (aBrowser, aWebProgress, aRequest, aStatus, aMessage) {},
-    onRefreshAttempted: function (aBrowser, aWebProgress, aRefreshURI, aMillis, aSameURI) {},
-    onLinkIconAvailable: function (aBrowser) {}
-  },
-
-
   // Method handleEvent() effectively makes this object an implementation of
   // the EventListener interface; therefore it can be passed as the listener
   // argument to window.addEventListener() and window.removeEventListener()
@@ -107,7 +74,6 @@ window.aecreations.sendtaburls = {
       if (tabMenuElt && parseInt(Application.version) >= 4) {
 	tabMenuElt.removeEventListener("popupshowing", that.initTabMenuCmd, false);
       }
-      gBrowser.removeTabsProgressListener(that._webProgressListener);
       window.removeEventListener("load", that, false);
       window.removeEventListener("unload", that, false);
     }
@@ -127,8 +93,6 @@ window.aecreations.sendtaburls = {
       var that = window.aecreations.sendtaburls;
       tabMenuElt.addEventListener("popupshowing", that.initTabMenuCmd, false);
     }
-
-    gBrowser.addTabsProgressListener(this._webProgressListener);
   },
 
   
@@ -152,34 +116,6 @@ window.aecreations.sendtaburls = {
       }
     }
 
-    // Reset the pending browsers array, in case it wasn't fully cleaned up
-    // the last time the Send Tabs action was invoked.
-    this.pendingTabs = [];
-
-    var tabbrowser = document.getElementById("content");
-    var numTabs = tabbrowser.browsers.length;
-    for (let i = 0; i < numTabs; i++) {
-      if (tabbrowser.browsers[i].getAttribute("pending")) {
-	this.pendingTabs.push(tabbrowser.browsers[i]);
-      }
-    }
-
-    // Check if any of the tabs are in pending state.  If they are,
-    // they need to be reloaded.
-    var reloadPendingTabsEnabled = Application.prefs.getValue("sendtabs.reload_pending_tabs", true);
-    if (reloadPendingTabsEnabled && this.pendingTabs.length > 0) {
-      this.aeUtils.log("Browser tabs in pending state: " + this.pendingTabs.toString());
-      for (let i = 0; i < this.pendingTabs.length; i++) {
-        this.pendingTabs[i].reload();
-      }
-    }
-    else {
-      this.sendTabsHelper();
-    }
-  },
-
-  sendTabsHelper: function ()
-  {
     var br = Application.prefs.getValue("sendtabs.message.line_break", "\r\n");
     var mailDest = Application.prefs.getValue("sendtabs.mailclient", 0);
     var tabbrowser = document.getElementById("content");
@@ -219,16 +155,7 @@ window.aecreations.sendtaburls = {
       }
 
       var title = "";
-
-      // Starting with Firefox 20, tabs won't be loaded until user clicks on
-      // them.  This would be the case if Firefox is configured to load browser
-      // tabs from the last browsing session.
-      if (tabbrowser.browsers[i].getAttribute("pending")) {
-	title = "???";
-      }
-      else {
-	title = tabbrowser.browsers[i].contentDocument.title;
-      }
+      title = tabbrowser.browsers[i].contentDocument.title;
 
       if (title == "") {
 	var hdgs = tabbrowser.browsers[i].contentDocument.getElementsByTagName("h1");
