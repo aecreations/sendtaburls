@@ -15,7 +15,7 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2004-2013
+ * Portions created by the Initial Developer are Copyright (C) 2004-2014
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -23,23 +23,19 @@
  * ***** END LICENSE BLOCK ***** */
 
 
-if (! ('extensions' in window)) {
-  window.extensions = {};
+if (! ('aecreations' in window)) {
+  window.aecreations = {};
 }
 
-if (! ('aecreations' in window.extensions)) {
-  window.extensions.aecreations = {};
-}
-
-if (! ('sendtaburls' in window.extensions.aecreations)) {
-  window.extensions.aecreations.sendtaburls = {};
+if (! ('sendtaburls' in window.aecreations)) {
+  window.aecreations.sendtaburls = {};
 }
 else {
   throw new Error("sendtaburls object already defined");
 }
 
 
-window.extensions.aecreations.sendtaburls = {
+window.aecreations.sendtaburls = {
   GMAIL_MAX_MSGLEN:  807,
 
   // List style constants
@@ -63,7 +59,7 @@ window.extensions.aecreations.sendtaburls = {
   // Instance of nsIWebProgressListener
   _webProgressListener: {
     onStateChange: function (aBrowser, aWebProgress, aRequest, aStateFlags, aStatus) {
-      let sendTabURLs = window.extensions.aecreations.sendtaburls;
+      let sendTabURLs = window.aecreations.sendtaburls;
       if (sendTabURLs.pendingTabs.length == 0) {
 	return;
       }
@@ -100,7 +96,7 @@ window.extensions.aecreations.sendtaburls = {
   {
     // When this method is invoked, 'this' will not refer to the sendtaburls
     // object.  The 'that' object will refer to 'this'. =)
-    let that = window.extensions.aecreations.sendtaburls;
+    let that = window.aecreations.sendtaburls;
 
     if (aEvent.type == "load") {
       that.initSendTabs();
@@ -128,7 +124,7 @@ window.extensions.aecreations.sendtaburls = {
     // Firefox 4 and newer: tab menu initialization
     var tabMenuElt = document.getElementById("alltabs-popup");
     if (tabMenuElt && parseInt(Application.version) >= 4) {
-      var that = window.extensions.aecreations.sendtaburls;
+      var that = window.aecreations.sendtaburls;
       tabMenuElt.addEventListener("popupshowing", that.initTabMenuCmd, false);
     }
 
@@ -616,14 +612,14 @@ window.extensions.aecreations.sendtaburls = {
 //
 
 Components.utils.import("resource://sendtabs/modules/aeUtils.js",
-			window.extensions.aecreations.sendtaburls);
+			window.aecreations.sendtaburls);
 Components.utils.import("resource://sendtabs/modules/aeString.js",
-			window.extensions.aecreations.sendtaburls);
+			window.aecreations.sendtaburls);
 
 
 //
 // Event handler initialization
 //
 
-window.addEventListener("load",   window.extensions.aecreations.sendtaburls, false);
-window.addEventListener("unload", window.extensions.aecreations.sendtaburls, false);
+window.addEventListener("load",   window.aecreations.sendtaburls, false);
+window.addEventListener("unload", window.aecreations.sendtaburls, false);
