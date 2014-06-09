@@ -158,6 +158,13 @@ window.aecreations.sendtaburls = {
       title = tabbrowser.browsers[i].contentDocument.title;
 
       if (title == "") {
+	// The web page title in the browser tab may not be retrievable if the
+	// tab wasn't loaded.
+	let tabbrowserTabs = document.getElementById("tabbrowser-tabs").tabbrowser.tabs;
+	title = tabbrowserTabs[i].label;
+      }
+
+      if (title == "") {
 	var hdgs = tabbrowser.browsers[i].contentDocument.getElementsByTagName("h1");
 	if (hdgs && hdgs.length > 0) {
 	  title = hdgs[0].textContent;
