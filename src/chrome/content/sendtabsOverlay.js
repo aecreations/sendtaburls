@@ -54,7 +54,7 @@ window.aecreations.sendtaburls = {
   CLIPBOARD_URLCOUNT_BOTTOM: 2,
 
   _strBundle:  null,
-  pendingTabs: [],
+
 
   // Method handleEvent() effectively makes this object an implementation of
   // the EventListener interface; therefore it can be passed as the listener
@@ -92,6 +92,13 @@ window.aecreations.sendtaburls = {
     if (tabMenuElt && parseInt(Application.version) >= 4) {
       var that = window.aecreations.sendtaburls;
       tabMenuElt.addEventListener("popupshowing", that.initTabMenuCmd, false);
+    }
+
+    // Migrate prefs from root to the "extensions." branch
+    let migratePrefs = this.aeUtils.getPref("sendtabs.migrate_prefs", true);
+    if (migratePrefs) {
+      this.aePrefMigrator.migratePrefs();
+      this.aeUtils.setPref("sendtabs.migrate_prefs", false);
     }
   },
 
@@ -390,7 +397,7 @@ window.aecreations.sendtaburls = {
     var subj = encodeURIComponent(aSubject);
     var body = encodeURIComponent(aBody);
     var mailto = "mailto:?subject=" + subj + "&body=" + body;
-    var mailApp = new aeWindowsApp();
+    var mailApp = this.aeWindowsApp.createInstance();
     mailApp.setPath(cmdLine);
 
     // Check for supported email apps
@@ -548,6 +555,10 @@ window.aecreations.sendtaburls = {
 Components.utils.import("resource://sendtabs/modules/aeUtils.js",
 			window.aecreations.sendtaburls);
 Components.utils.import("resource://sendtabs/modules/aeString.js",
+			window.aecreations.sendtaburls);
+Components.utils.import("resource://sendtabs/modules/aeWindowsApp.js",
+			window.aecreations.sendtaburls);
+Components.utils.import("resource://sendtabs/modules/aePrefMigrator.js",
 			window.aecreations.sendtaburls);
 
 
