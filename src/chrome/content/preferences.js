@@ -15,7 +15,7 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2008-2011
+ * Portions created by the Initial Developer are Copyright (C) 2008-2014
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -54,20 +54,20 @@ function initDlg()
 
   // Firefox 4 and newer
   if (parseInt(Application.version) >= 4) {
-    gShowTabMenuCmd.checked = Application.prefs.getValue("sendtabs.show_tab_menu_command", true);
+    gShowTabMenuCmd.checked = aeUtils.setPref("sendtabs.show_tab_menu_command", true);
   }
   else {
     gShowTabMenuCmd.hidden = true;
   }
 
-  gAlwaysAskFmt.checked = Application.prefs.getValue("sendtabs.message.format.always_ask", true);
+  gAlwaysAskFmt.checked = aeUtils.setPref("sendtabs.message.format.always_ask", true);
 
-  var openInNewWnd = Application.prefs.getValue("sendtabs.webmail.open_in_new_window", false);
+  var openInNewWnd = aeUtils.setPref("sendtabs.webmail.open_in_new_window", false);
   gWebMail.selectedIndex = openInNewWnd ? 1 : 0;
 
-  gConfCopy.checked = Application.prefs.getValue("sendtabs.mailclient.clipboard.confirm_copy", true);
+  gConfCopy.checked = aeUtils.setPref("sendtabs.mailclient.clipboard.confirm_copy", true);
 
-  var clipbdUrlCountPos = Application.prefs.getValue("sendtabs.mailclient.clipboard.url_count_position", 1);
+  var clipbdUrlCountPos = aeUtils.setPref("sendtabs.mailclient.clipboard.url_count_position", 1);
   if (clipbdUrlCountPos != CLIPBOARD_URLCOUNT_DISABLED) {
     gInclUrlCount.checked = true;
     gUrlCountPos.selectedIndex = clipbdUrlCountPos - 1;
@@ -75,10 +75,10 @@ function initDlg()
 
   toggleClipboardURLCountPositonState(gInclUrlCount);
 
-  var isGoogleAppsEnabled = Application.prefs.getValue("sendtabs.mailclient.googleapps.enabled", false);
+  var isGoogleAppsEnabled = aeUtils.setPref("sendtabs.mailclient.googleapps.enabled", false);
   if (isGoogleAppsEnabled) {
     $("tab-google-apps").hidden = false;
-    gGoogAppsDomain.value = Application.prefs.getValue("sendtabs.mailclient.googleapps.domain", "");
+    gGoogAppsDomain.value = aeUtils.setPref("sendtabs.mailclient.googleapps.domain", "");
   }
 }
 
@@ -103,7 +103,7 @@ function showChangedPrefMsg()
 {
   // Don't show the message if the checkbox was previously ticked, and the user
   // unticked it, and then ticked it again
-  var isTabMenuCmdVisible = Application.prefs.getValue("sendtabs.show_tab_menu_command", true);
+  var isTabMenuCmdVisible = aeUtils.setPref("sendtabs.show_tab_menu_command", true);
   if (gShowTabMenuCmd.checked && !isTabMenuCmdVisible) {
     aeUtils.alertEx(document.title, gStrBundle.getString("prefChangeMsg"));
   }
@@ -119,14 +119,14 @@ function doOK()
   }
 
   if (! gShowTabMenuCmd.hidden) {
-    Application.prefs.setValue("sendtabs.show_tab_menu_command", gShowTabMenuCmd.checked);
+    aeUtils.setPref("sendtabs.show_tab_menu_command", gShowTabMenuCmd.checked);
   }
 
-  Application.prefs.setValue("sendtabs.message.format.always_ask", gAlwaysAskFmt.checked);
-  Application.prefs.setValue("sendtabs.webmail.open_in_new_window", openInNewWnd);
-  Application.prefs.setValue("sendtabs.mailclient.clipboard.confirm_copy", gConfCopy.checked);
-  Application.prefs.setValue("sendtabs.mailclient.clipboard.url_count_position", clipbdUrlCountPos);
-  Application.prefs.setValue("sendtabs.mailclient.googleapps.domain", gGoogAppsDomain.value);
+  aeUtils.setPref("sendtabs.message.format.always_ask", gAlwaysAskFmt.checked);
+  aeUtils.setPref("sendtabs.webmail.open_in_new_window", openInNewWnd);
+  aeUtils.setPref("sendtabs.mailclient.clipboard.confirm_copy", gConfCopy.checked);
+  aeUtils.setPref("sendtabs.mailclient.clipboard.url_count_position", clipbdUrlCountPos);
+  aeUtils.setPref("sendtabs.mailclient.googleapps.domain", gGoogAppsDomain.value);
 
   return true;
 }
