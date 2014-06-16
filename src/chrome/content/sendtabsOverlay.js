@@ -100,12 +100,19 @@ window.aecreations.sendtaburls = {
       this.aePrefMigrator.migratePrefs();
       this.aeUtils.setPref("sendtabs.migrate_prefs", false);
     }
+    /***
+    let firstRun = this.aeUtils.getPref("sendtabs.first_run", true);
+    if (firstRun) {
+      // TO DO: Add toolbar button to menu panel (Firefox 29 and newer)
+      this.aeUtils.setPref("sendtabs.first_run", false);
+    }
+    ***/
   },
 
   
   initTabMenuCmd: function (aEvent)
   {
-    var isTabMenuCmdVisible = Application.prefs.getValue("sendtabs.show_tab_menu_command", true);
+    var isTabMenuCmdVisible = this.aeUtils.getPref("sendtabs.show_tab_menu_command", true);
     if (! isTabMenuCmdVisible) {
       document.getElementById("ae-sendtabs-tabmenu").hidden = true;
     }
@@ -114,7 +121,7 @@ window.aecreations.sendtaburls = {
 
   sendTabs: function ()
   { 
-    var isFormatPromptEnabled = Application.prefs.getValue("sendtabs.message.format.always_ask", true);
+    var isFormatPromptEnabled = this.aeUtils.getPref("sendtabs.message.format.always_ask", true);
     if (isFormatPromptEnabled) {
       var dlgArgs = { cancel: null };
       window.openDialog("chrome://sendtabs/content/formatOpts.xul", "ae_sendtabs_formatopts", "modal,centerscreen", dlgArgs);
@@ -123,8 +130,8 @@ window.aecreations.sendtaburls = {
       }
     }
 
-    var br = Application.prefs.getValue("sendtabs.message.line_break", "\r\n");
-    var mailDest = Application.prefs.getValue("sendtabs.mailclient", 0);
+    var br = this.aeUtils.getPref("sendtabs.message.line_break", "\r\n");
+    var mailDest = this.aeUtils.getPref("sendtabs.mailclient", 0);
     var tabbrowser = document.getElementById("content");
     var numTabs = tabbrowser.browsers.length;
     var maxTabs = mailDest == this.SENDTO_CLIPBOARD ? numTabs : 30;
@@ -149,7 +156,7 @@ window.aecreations.sendtaburls = {
     }
 
     var body = "";
-    var listStyle = Application.prefs.getValue("sendtabs.message.format.list_style", 0);
+    var listStyle = this.aeUtils.getPref("sendtabs.message.format.list_style", 0);
     var listChar = "";
 
     if (listStyle == this.FMTOPT_BULLETED) {
@@ -224,7 +231,7 @@ window.aecreations.sendtaburls = {
 
     switch (mailDest) {
     case this.SENDTO_CLIPBOARD:  // Clipboard
-      var urlCountPos = Application.prefs.getValue("sendtabs.mailclient.clipboard.url_count_position", 1);
+      var urlCountPos = this.aeUtils.getPref("sendtabs.mailclient.clipboard.url_count_position", 1);
       if (urlCountPos == this.CLIPBOARD_URLCOUNT_TOP) {
 	mailStr = subj + br + br + br + body;
       }
@@ -240,7 +247,7 @@ window.aecreations.sendtaburls = {
 					 .nsIClipboardHelper);
       clipbd.copyString(mailStr);
 
-      var confirmCopy = Application.prefs.getValue("sendtabs.mailclient.clipboard.confirm_copy", true);
+      var confirmCopy = this.aeUtils.getPref("sendtabs.mailclient.clipboard.confirm_copy", true);
       if (confirmCopy) {
 	this._showCopyToClipboardConfirmation();
       }
@@ -333,7 +340,7 @@ window.aecreations.sendtaburls = {
   _getGoogleAppsMailStr: function (aSubject, aBody)
   {
     var rv;
-    var gappsDomain = Application.prefs.getValue("sendtabs.mailclient.googleapps.domain", "");
+    var gappsDomain = this.aeUtils.getPref("sendtabs.mailclient.googleapps.domain", "");
     if (! gappsDomain) {
       var dlgArgs = {};
       window.openDialog("chrome://sendtabs/content/googleApps.xul",
@@ -343,7 +350,7 @@ window.aecreations.sendtaburls = {
       if ('googleAppsDomain' in dlgArgs) {
 	gappsDomain = dlgArgs.googleAppsDomain;
 	this.aeUtils.log("sendtabs: Google Apps domain name: " + gappsDomain);
-	Application.prefs.setValue("sendtabs.mailclient.googleapps.domain",
+	this.aeUtils.setPref("sendtabs.mailclient.googleapps.domain",
 			    gappsDomain);
       }
       else {
@@ -365,9 +372,9 @@ window.aecreations.sendtaburls = {
 
   _loadWebMailClient: function (aMailStr)
   {
-    var openInNewWnd = Application.prefs.getValue("sendtabs.webmail.open_in_new_window", false);
+    var openInNewWnd = this.aeUtils.getPref("sendtabs.webmail.open_in_new_window", false);
     if (openInNewWnd) {
-      var wndFeatures = Application.prefs.getValue("sendtabs.webmail.window_features", "");
+      var wndFeatures = this.aeUtils.getPref("sendtabs.webmail.window_features", "");
       window.open(aMailStr, null, wndFeatures);
     }
     else {
