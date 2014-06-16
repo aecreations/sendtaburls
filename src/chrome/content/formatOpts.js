@@ -15,12 +15,14 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2006-2011
+ * Portions created by the Initial Developer are Copyright (C) 2006-2014
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
  *
  * ***** END LICENSE BLOCK ***** */
+
+Components.utils.import("resource://sendtabs/modules/aeUtils.js");
 
 
 const FMTOPT_NO_FORMATTING = 0;
@@ -45,13 +47,13 @@ function initDlg()
   gAlwaysAsk = $("always-ask");
   gMailClient   = $("mail-client");
 
-  var fmtPref = Application.prefs.getValue("sendtabs.message.format.list_style", 0);
+  var fmtPref = aeUtils.getPref("sendtabs.message.format.list_style", 0);
   gFmtRadiogroup.selectedIndex = fmtPref;
   setPreviewImage(fmtPref);
-  gAlwaysAsk.checked = Application.prefs.getValue("sendtabs.message.format.always_ask", true);
-  gMailClient.selectedIndex = Application.prefs.getValue("sendtabs.mailclient", 0);
+  gAlwaysAsk.checked = aeUtils.getPref("sendtabs.message.format.always_ask", true);
+  gMailClient.selectedIndex = aeUtils.getPref("sendtabs.mailclient", 0);
 
-  var isGoogleAppsEnabled = Application.prefs.getValue("sendtabs.mailclient.googleapps.enabled", false);
+  var isGoogleAppsEnabled = aeUtils.getPref("sendtabs.mailclient.googleapps.enabled", false);
   if (isGoogleAppsEnabled) {
     $("googapps").hidden = false;
   }
@@ -116,15 +118,15 @@ function cycleFormat()
 
 function doOK() 
 {
-  Application.prefs.setValue("sendtabs.message.format.list_style", gFmtRadiogroup.selectedIndex);
+  aeUtils.setPref("sendtabs.message.format.list_style", gFmtRadiogroup.selectedIndex);
 
   if (! gAlwaysAsk.hidden) {
     // The "Always ask" checkbox would be hidden if this dialog was opened
     // from extension preferences.
-    Application.prefs.setValue("sendtabs.message.format.always_ask", gAlwaysAsk.checked);
+    aeUtils.setPref("sendtabs.message.format.always_ask", gAlwaysAsk.checked);
   }
 
-  Application.prefs.setValue("sendtabs.mailclient", gMailClient.selectedIndex);
+  aeUtils.setPref("sendtabs.mailclient", gMailClient.selectedIndex);
 
   return true;
 }
