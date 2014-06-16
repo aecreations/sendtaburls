@@ -54,20 +54,20 @@ function initDlg()
 
   // Firefox 4 and newer
   if (parseInt(Application.version) >= 4) {
-    gShowTabMenuCmd.checked = aeUtils.setPref("sendtabs.show_tab_menu_command", true);
+    gShowTabMenuCmd.checked = aeUtils.getPref("sendtabs.show_tab_menu_command", true);
   }
   else {
     gShowTabMenuCmd.hidden = true;
   }
 
-  gAlwaysAskFmt.checked = aeUtils.setPref("sendtabs.message.format.always_ask", true);
+  gAlwaysAskFmt.checked = aeUtils.getPref("sendtabs.message.format.always_ask", true);
 
-  var openInNewWnd = aeUtils.setPref("sendtabs.webmail.open_in_new_window", false);
+  var openInNewWnd = aeUtils.getPref("sendtabs.webmail.open_in_new_window", false);
   gWebMail.selectedIndex = openInNewWnd ? 1 : 0;
 
-  gConfCopy.checked = aeUtils.setPref("sendtabs.mailclient.clipboard.confirm_copy", true);
+  gConfCopy.checked = aeUtils.getPref("sendtabs.mailclient.clipboard.confirm_copy", true);
 
-  var clipbdUrlCountPos = aeUtils.setPref("sendtabs.mailclient.clipboard.url_count_position", 1);
+  var clipbdUrlCountPos = aeUtils.getPref("sendtabs.mailclient.clipboard.url_count_position", 1);
   if (clipbdUrlCountPos != CLIPBOARD_URLCOUNT_DISABLED) {
     gInclUrlCount.checked = true;
     gUrlCountPos.selectedIndex = clipbdUrlCountPos - 1;
@@ -75,10 +75,12 @@ function initDlg()
 
   toggleClipboardURLCountPositonState(gInclUrlCount);
 
-  var isGoogleAppsEnabled = aeUtils.setPref("sendtabs.mailclient.googleapps.enabled", false);
+  var isGoogleAppsEnabled = aeUtils.getPref("sendtabs.mailclient.googleapps.enabled", true);
   if (isGoogleAppsEnabled) {
-    $("tab-google-apps").hidden = false;
-    gGoogAppsDomain.value = aeUtils.setPref("sendtabs.mailclient.googleapps.domain", "");
+    gGoogAppsDomain.value = aeUtils.getPref("sendtabs.mailclient.googleapps.domain", "");
+  }
+  else {
+    $("tab-google-apps").hidden = true;
   }
 }
 
@@ -103,7 +105,7 @@ function showChangedPrefMsg()
 {
   // Don't show the message if the checkbox was previously ticked, and the user
   // unticked it, and then ticked it again
-  var isTabMenuCmdVisible = aeUtils.setPref("sendtabs.show_tab_menu_command", true);
+  var isTabMenuCmdVisible = aeUtils.getPref("sendtabs.show_tab_menu_command", true);
   if (gShowTabMenuCmd.checked && !isTabMenuCmdVisible) {
     aeUtils.alertEx(document.title, gStrBundle.getString("prefChangeMsg"));
   }
