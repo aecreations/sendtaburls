@@ -20,7 +20,7 @@
    -
    - The Initial Developer of the Original Code is
    - Alex Eng <ateng@users.sourceforge.net>.
-   - Portions created by the Initial Developer are Copyright (C) 2006-2011
+   - Portions created by the Initial Developer are Copyright (C) 2006-2014
    - the Initial Developer. All Rights Reserved.
    -
    - Contributor(s):
@@ -77,8 +77,7 @@
 	    <menuitem label="&mailClient.default;"/>
 	    <menuitem label="&mailClient.clipboard;"/>
 	    <menuitem label="&mailClient.gmail;"/>
-	    <menuitem label="&mailClient.googleAppsGmail;" 
-	     hidden="true" id="googapps" />
+	    <menuitem label="&mailClient.googleAppsGmail;" id="googapps" />
           </menupopup>
         </menulist>
       </row>
