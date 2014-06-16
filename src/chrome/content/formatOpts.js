@@ -53,9 +53,9 @@ function initDlg()
   gAlwaysAsk.checked = aeUtils.getPref("sendtabs.message.format.always_ask", true);
   gMailClient.selectedIndex = aeUtils.getPref("sendtabs.mailclient", 0);
 
-  var isGoogleAppsEnabled = aeUtils.getPref("sendtabs.mailclient.googleapps.enabled", false);
-  if (isGoogleAppsEnabled) {
-    $("googapps").hidden = false;
+  var isGoogleAppsEnabled = aeUtils.getPref("sendtabs.mailclient.googleapps.enabled", true);
+  if (! isGoogleAppsEnabled) {
+    $("googapps").hidden = true;
   }
 
   // window.arguments is defined only if invoked from main browser window
