@@ -30,7 +30,6 @@
 <overlay id="ae-sendtabs-overlay"
  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script type="application/javascript" src="chrome://sendtabs/content/winapp.js"/>
   <script type="application/javascript" src="chrome://sendtabs/content/sendtabsOverlay.js"/>
 
   <stringbundleset id="stringbundleset">
