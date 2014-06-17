@@ -80,6 +80,12 @@ window.aecreations.sendtaburls = {
   },
 
 
+  isAustralisUI: function ()
+  {
+    return document.getElementById("PanelUI-menu-button") != null;
+  },
+
+
   initSendTabs: function ()
   {
     this._strBundle = document.getElementById("ae-sendtabs-strings");
@@ -100,13 +106,16 @@ window.aecreations.sendtaburls = {
       this.aePrefMigrator.migratePrefs();
       this.aeUtils.setPref("sendtabs.migrate_prefs", false);
     }
-    /***
+
     let firstRun = this.aeUtils.getPref("sendtabs.first_run", true);
     if (firstRun) {
-      // TO DO: Add toolbar button to menu panel (Firefox 29 and newer)
+      if (this.isAustralisUI()) {
+	// Add the Send Tab URLs button to Firefox's menu panel.
+	CustomizableUI.addWidgetToArea("ae-sendtabs-toolbarbutton", CustomizableUI.AREA_PANEL);
+      }
+
       this.aeUtils.setPref("sendtabs.first_run", false);
     }
-    ***/
   },
 
   
