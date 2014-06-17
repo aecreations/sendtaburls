@@ -29,7 +29,7 @@
 //    "extensions.aecreations" branch.
 //
 
-Components.utils.import("resource://panicbutton/modules/aeUtils.js");
+Components.utils.import("resource://sendtabs/modules/aeUtils.js");
 Components.utils.import("resource://gre/modules/Services.jsm");
 
 
