@@ -15,33 +15,34 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2006-2011
+ * Portions created by the Initial Developer are Copyright (C) 2006-2014
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
  *
  * ***** END LICENSE BLOCK ***** */
 
-
+/* Integration with Firefox 28 and older. */
 #ae-sendtabs-toolbarbutton {
-  list-style-image:   url("chrome://sendtabs/skin/img/sendtabsToolbar.png");
-  -moz-image-region:  rect(0px, 24px, 24px, 0px);
-}
-
-#ae-sendtabs-toolbarbutton:hover {
-  -moz-image-region: rect(0px, 48px, 24px, 24px);
-}
-
-#ae-sendtabs-tabmenu {
-  list-style-image:   url("chrome://sendtabs/skin/img/sendtabsToolbar.png");
-  -moz-image-region:  rect(24px, 16px, 40px, 0px);
+  list-style-image:   url("chrome://sendtabs/skin/img/hostappIcon.png");
+  -moz-image-region:  rect(16px, 24px, 40px, 0px);
 }
 
 toolbar[iconsize="small"] #ae-sendtabs-toolbarbutton {
-  list-style-image:   url("chrome://sendtabs/skin/img/sendtabsToolbar.png");
-  -moz-image-region:  rect(24px, 16px, 40px, 0px);
+  -moz-image-region:  rect(0px, 16px, 16px, 0px);
 }
 
-toolbar[iconsize="small"] #ae-sendtabs-toolbarbutton:hover {
-  -moz-image-region: rect(24px, 32px, 40px, 16px);
+#ae-sendtabs-tabmenu {
+  list-style-image:   url("chrome://sendtabs/skin/img/hostappIcon.png");
+  -moz-image-region:  rect(0px, 16px, 16px, 0px);
+}
+
+/* Integration with Firefox Australis. */
+#ae-sendtabs-toolbarbutton[cui-areatype="toolbar"] {
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#ae-sendtabs-toolbarbutton[cui-areatype="menu-panel"],
+toolbarpaletteitem[place="palette"][removable="true"] > #ae-sendtabs-toolbarbutton {
+  -moz-image-region: rect(40px, 32px, 72px, 0px);
 }
