@@ -25,7 +25,7 @@
 
 const EXPORTED_SYMBOLS = ["aeUtils"];
 
-const DEBUG = true;
+const DEBUG = false;
 const PREFNAME_PREFIX = "extensions.aecreations.";
 const EXTENSION_ID = "{4aebcd37-f454-4928-9233-174a026ed367}";
 
