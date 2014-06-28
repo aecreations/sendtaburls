@@ -5,7 +5,7 @@
 <!ENTITY sendtabs.menuitem.label "Send Tab URLs...">
 <!ENTITY sendtabs.menuitem.accesskey "d">
 <!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
-<!ENTITY sendtabs.toolbarbutton.tooltip "Send a list of browser tab URLs to email, Web mail, or the clipboard">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Send a list of browser tab URLs to email or the clipboard">
 
 <!-- Send To Clipboard confirmation dialog -->
 <!ENTITY sendToClipboardConfirm "The URL list has been copied to the clipboard.">
