@@ -8,7 +8,7 @@
     <em:id>{4aebcd37-f454-4928-9233-174a026ed367}</em:id>
     <em:type>2</em:type>
     <em:version>2.2</em:version>
-    <em:description>Send a list of browser tab URLs to email, web mail, or the clipboard.</em:description>
+    <em:description>Send a list of browser tab URLs to email or the clipboard.</em:description>
     <em:creator>AE Creations</em:creator>
     <em:contributor>Babelzilla Translators</em:contributor>
     <em:iconURL>chrome://sendtabs/skin/img/icon.png</em:iconURL>
