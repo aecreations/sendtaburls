@@ -1,3 +1,4 @@
+/* -*- mode: C++; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1
  *
@@ -15,7 +16,7 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2004-2014
+ * Portions created by the Initial Developer are Copyright (C) 2004-2015
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -69,11 +70,9 @@ window.aecreations.sendtaburls = {
       that.initSendTabs();
     }
     else if (aEvent.type == "unload") {
-      // Firefox 4 and newer
       var tabMenuElt = document.getElementById("alltabs-popup");
-      if (tabMenuElt && parseInt(Application.version) >= 4) {
-	tabMenuElt.removeEventListener("popupshowing", that.initTabMenuCmd, false);
-      }
+      tabMenuElt.removeEventListener("popupshowing", that.initTabMenuCmd, false);
+
       window.removeEventListener("load", that, false);
       window.removeEventListener("unload", that, false);
     }
@@ -91,12 +90,12 @@ window.aecreations.sendtaburls = {
     this._strBundle = document.getElementById("ae-sendtabs-strings");
 
     var appName = this._strBundle.getString("appName");
-    this.aeUtils.log(this.aeString.format("%s initialized; host OS is %s\nHost app: %s (version %s)", appName, this.aeUtils.getOS(), Application.name, Application.version));
+    this.aeUtils.log(this.aeString.format("%s initialized; host OS is %s; host app: %s (version %s)", appName, this.aeUtils.getOS(), this.aeUtils.getHostAppName(), this.aeUtils.getHostAppVersion()));
 
-    // Firefox 4 and newer: tab menu initialization
+    // Tab menu initialization
     var tabMenuElt = document.getElementById("alltabs-popup");
-    if (tabMenuElt && parseInt(Application.version) >= 4) {
-      var that = window.aecreations.sendtaburls;
+    if (tabMenuElt) {
+      let that = window.aecreations.sendtaburls;
       tabMenuElt.addEventListener("popupshowing", that.initTabMenuCmd, false);
     }
 
