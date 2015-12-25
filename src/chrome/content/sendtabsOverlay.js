@@ -95,8 +95,7 @@ window.aecreations.sendtaburls = {
     // Tab menu initialization
     var tabMenuElt = document.getElementById("alltabs-popup");
     if (tabMenuElt) {
-      let that = window.aecreations.sendtaburls;
-      tabMenuElt.addEventListener("popupshowing", that.initTabMenuCmd, false);
+      tabMenuElt.addEventListener("popupshowing", this._initTabMenuCmd, false);
     }
 
     // Migrate prefs from root to the "extensions." branch
@@ -121,11 +120,22 @@ window.aecreations.sendtaburls = {
   initTabMenuCmd: function (aEvent)
   {
     var isTabMenuCmdVisible = this.aeUtils.getPref("sendtabs.show_tab_menu_command", true);
+
+    this.aeUtils.log("sendTabs.initTabMenuCmd(): isTabMenuCmdVisible: " + isTabMenuCmdVisible);
+
     if (! isTabMenuCmdVisible) {
       document.getElementById("ae-sendtabs-tabmenu").hidden = true;
     }
   },
     
+
+  // To be invoked only by an event handler
+  _initTabMenuCmd: function (aEvent)
+  {
+    let that = window.aecreations.sendtaburls;
+    that.initTabMenuCmd(aEvent);
+  },
+
 
   sendTabs: function ()
   { 
