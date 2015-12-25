@@ -16,7 +16,7 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2013-2014
+ * Portions created by the Initial Developer are Copyright (C) 2013-2015
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -29,18 +29,13 @@
 //    "extensions.aecreations" branch.
 //
 
-Components.utils.import("resource://sendtabs/modules/aeUtils.js");
 Components.utils.import("resource://gre/modules/Services.jsm");
+Components.utils.import("resource://sendtabs/modules/aeUtils.js");
 
 
 const EXPORTED_SYMBOLS = ["aePrefMigrator"];
 
 const PREFNAME_PREFIX = "extensions.aecreations.";
-
-const Cc = Components.classes;
-const Ci = Components.interfaces;
-
-var Application = Cc["@mozilla.org/fuel/application;1"].getService(Ci.fuelIApplication);
 
 
 var aePrefMigrator = {
@@ -63,23 +58,64 @@ var aePrefMigrator = {
 
   _migratePref: function (aPrefName, aDefaultValue)
   {
-    if (! Application.prefs.has(aPrefName)) {
+    let prefs = Services.prefs;
+
+    if (! prefs.prefHasUserValue(aPrefName)) {
       return;
     }
 
     // Migrate pref over to "extensions." branch
-    let prefValue = Application.prefs.getValue(aPrefName, aDefaultValue);
+    let prefValue = this._getPref(aPrefName, aDefaultValue);
     let newPrefName = PREFNAME_PREFIX + aPrefName;
-    Application.prefs.setValue(newPrefName, prefValue);
+    this._setPref(newPrefName, prefValue, prefs.getPrefType(aPrefName));
 
     aeUtils.log('aePrefMigrator: Migrated pref: "' + aPrefName + '"');
 
-    let prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch);
     try {
       prefs.clearUserPref(aPrefName);
     }
     catch (e) {
       aeUtils.log("aePrefMigrator: " + e);
+    }
+  },
+
+
+  _getPref: function (aPrefName, aDefaultValue)
+  {
+    let prefs = Services.prefs;
+    let prefType = prefs.getPrefType(aPrefName);
+    let rv = undefined;
+
+    if (prefType == prefs.PREF_STRING) {
+      rv = prefs.getCharPref(aPrefName);
+    }
+    else if (prefType == prefs.PREF_INT) {
+      rv = prefs.getIntPref(aPrefName);
+    }
+    else if (prefType == prefs.PREF_BOOL) {
+      rv = prefs.getBoolPref(aPrefName);
+    }
+    else {
+      // Pref doesn't exist if prefType == prefs.PREF_INVALID.
+      rv = aDefaultValue;
+    }
+
+    return rv;
+  },
+
+
+  _setPref: function (aPrefName, aPrefValue, aPrefType)
+  {
+    let prefs = Services.prefs;
+
+    if (aPrefType == prefs.PREF_INT) {
+      prefs.setIntPref(aPrefName, aPrefValue);
+    }
+    else if (aPrefType == prefs.PREF_BOOL) {
+      prefs.setBoolPref(aPrefName, aPrefValue);
+    }
+    else if (aPrefType == prefs.PREF_STRING) {
+      prefs.setCharPref(aPrefName, aPrefValue);
     }
   }
 };
