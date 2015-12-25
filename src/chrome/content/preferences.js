@@ -1,3 +1,4 @@
+/* -*- mode: C++; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1
  *
@@ -52,14 +53,7 @@ function initDlg()
   gUrlCountPos = $("url-count-position");
   gGoogAppsDomain = $("google-apps-domain");
 
-  // Firefox 4 and newer
-  if (parseInt(Application.version) >= 4) {
-    gShowTabMenuCmd.checked = aeUtils.getPref("sendtabs.show_tab_menu_command", true);
-  }
-  else {
-    gShowTabMenuCmd.hidden = true;
-  }
-
+  gShowTabMenuCmd.checked = aeUtils.getPref("sendtabs.show_tab_menu_command", true);
   gAlwaysAskFmt.checked = aeUtils.getPref("sendtabs.message.format.always_ask", true);
 
   var openInNewWnd = aeUtils.getPref("sendtabs.webmail.open_in_new_window", false);
