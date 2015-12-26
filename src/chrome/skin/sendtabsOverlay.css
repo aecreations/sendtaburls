@@ -15,26 +15,15 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2006-2014
+ * Portions created by the Initial Developer are Copyright (C) 2006-2015
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
  *
  * ***** END LICENSE BLOCK ***** */
 
-/* Integration with Firefox 28 and older. */
 #ae-sendtabs-toolbarbutton {
-  list-style-image:   url("chrome://sendtabs/skin/img/hostappIcon.png");
-  -moz-image-region:  rect(16px, 24px, 40px, 0px);
-}
-
-toolbar[iconsize="small"] #ae-sendtabs-toolbarbutton {
-  -moz-image-region:  rect(0px, 16px, 16px, 0px);
-}
-
-#ae-sendtabs-tabmenu {
-  list-style-image:   url("chrome://sendtabs/skin/img/hostappIcon.png");
-  -moz-image-region:  rect(0px, 16px, 16px, 0px);
+  list-style-image:   url("chrome://sendtabs/skin/img/overlayToolbar.png");
 }
 
 /* Integration with Firefox Australis. */
