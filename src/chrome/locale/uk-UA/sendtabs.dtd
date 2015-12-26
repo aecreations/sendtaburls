@@ -1,55 +1,55 @@
 <!---->
 <!ENTITY sendtabs.appName "Send Tab URLs">
 <!---->
-<!ENTITY sendtabs.menuitem.label "">
-<!ENTITY sendtabs.menuitem.accesskey "">
-<!ENTITY sendtabs.toolbarbutton.label "">
-<!ENTITY sendtabs.toolbarbutton.tooltip "">
+<!ENTITY sendtabs.menuitem.label "Надіслати список адрес…">
+<!ENTITY sendtabs.menuitem.accesskey "а">
+<!ENTITY sendtabs.toolbarbutton.label "Надіслати список адрес">
+<!ENTITY sendtabs.toolbarbutton.tooltip "Надіслати список адрес вкладок поштою чи у буфер обміну">
 <!---->
-<!ENTITY sendToClipboardConfirm "">
+<!ENTITY sendToClipboardConfirm "Список адрес був скопійований до буферу обміну.">
 <!---->
-<!ENTITY googAppsDomain.label "">
-<!ENTITY googAppsDomain.accesskey "">
+<!ENTITY googAppsDomain.label "Google Apps домен:">
+<!ENTITY googAppsDomain.accesskey "д">
 <!---->
-<!ENTITY sendToClipboard.label "">
+<!ENTITY sendToClipboard.label "Надіслати до буферу обміну">
 <!---->
-<!ENTITY fmtopts.caption "">
-<!ENTITY fmtnone.label "">
-<!ENTITY fmtnone.accesskey "">
-<!ENTITY fmtnumbered.label "">
-<!ENTITY fmtnumbered.accesskey "">
-<!ENTITY fmtbulleted.label "">
-<!ENTITY fmtbulleted.accesskey "">
-<!ENTITY alwaysask.label "">
-<!ENTITY alwaysask.accesskey "">
-<!ENTITY sendTo.label "">
-<!ENTITY sendTo.accesskey "">
-<!ENTITY mailClient.default "">
-<!ENTITY mailClient.clipboard "">
+<!ENTITY fmtopts.caption "Параметри форматування">
+<!ENTITY fmtnone.label "Простий список">
+<!ENTITY fmtnone.accesskey "П">
+<!ENTITY fmtnumbered.label "Нумерований">
+<!ENTITY fmtnumbered.accesskey "Н">
+<!ENTITY fmtbulleted.label "Маркований">
+<!ENTITY fmtbulleted.accesskey "М">
+<!ENTITY alwaysask.label "Завжди показувати діалог при надсиланні">
+<!ENTITY alwaysask.accesskey "З">
+<!ENTITY sendTo.label "Надіслати до:">
+<!ENTITY sendTo.accesskey "д">
+<!ENTITY mailClient.default "Типова поштова програма">
+<!ENTITY mailClient.clipboard "Буфер обміну">
 <!ENTITY mailClient.gmail "Gmail">
 <!ENTITY mailClient.googleAppsGmail "Google Apps">
 <!---->
-<!ENTITY sendtabsPrefDlg.title "">
+<!ENTITY sendtabsPrefDlg.title "Send Tab URLs Параметри">
 <!ENTITY tabOptions "Загальні">
-<!ENTITY tabClipboard "">
+<!ENTITY tabClipboard "Буфер обміну">
 <!ENTITY tabGoogleApps "Google Apps">
-<!ENTITY alwaysAskFmt.label "">
-<!ENTITY alwaysAskFmt.accesskey "">
+<!ENTITY alwaysAskFmt.label "Завжди питати як я хочу форматувати адресний список">
+<!ENTITY alwaysAskFmt.accesskey "я">
 <!ENTITY fmtSettings.label "Налаштування...">
-<!ENTITY fmtSettings.accesskey "">
-<!ENTITY webMail "">
-<!ENTITY webmailNewTab.label "">
-<!ENTITY webmailNewTab.accesskey "">
-<!ENTITY webmailNewWnd.label "">
-<!ENTITY webmailNewWnd.accesskey "">
-<!ENTITY showTabMenuCmd.label "">
-<!ENTITY showTabMenuCmd.accesskey "">
-<!ENTITY confirmCopy.label "">
-<!ENTITY confirmCopy.accesskey "">
-<!ENTITY includeURLCount.label "">
-<!ENTITY includeURLCount.accesskey "">
-<!ENTITY placeIt.label "">
-<!ENTITY placeIt.accesskey "">
-<!ENTITY urlPos.above "">
-<!ENTITY urlPos.below "">
-<!ENTITY urlList.label "">
+<!ENTITY fmtSettings.accesskey "Н">
+<!ENTITY webMail "Електронна пошта">
+<!ENTITY webmailNewTab.label "Відкрити у новій вкладці">
+<!ENTITY webmailNewTab.accesskey "в">
+<!ENTITY webmailNewWnd.label "Відкрити у новому вікні">
+<!ENTITY webmailNewWnd.accesskey "і">
+<!ENTITY showTabMenuCmd.label "Показувати команду &quot;Надіслати список адрес&quot; в меню списку усіх вкладок.">
+<!ENTITY showTabMenuCmd.accesskey "а">
+<!ENTITY confirmCopy.label "Показувати підтвердження, коли список адрес скопійований до буферу обміну">
+<!ENTITY confirmCopy.accesskey "с">
+<!ENTITY includeURLCount.label "Включаючи кількість адрес">
+<!ENTITY includeURLCount.accesskey "ч">
+<!ENTITY placeIt.label "Помістіть його:">
+<!ENTITY placeIt.accesskey "й">
+<!ENTITY urlPos.above "над">
+<!ENTITY urlPos.below "під">
+<!ENTITY urlList.label "адресним списком">

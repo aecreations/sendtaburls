@@ -25,6 +25,6 @@ locale	sendtabs	sv-SE	chrome/locale/sv-SE/
 locale	sendtabs	zh-CN	chrome/locale/zh-CN/
 #locale	sendtabs	tr-TR	chrome/locale/tr-TR/
 #locale	sendtabs	ru-RU	chrome/locale/ru-RU/
-#locale	sendtabs	uk-UA	chrome/locale/uk-UA/
+locale	sendtabs	uk-UA	chrome/locale/uk-UA/
 #locale	sendtabs	zh-TW	chrome/locale/zh-TW/
 
