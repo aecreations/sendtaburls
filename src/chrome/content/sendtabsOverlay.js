@@ -181,29 +181,17 @@ window.aecreations.sendtaburls = {
       listChar = "- ";
     }
 
+    let tabbrowserTabs = document.getElementById("tabbrowser-tabs").tabbrowser.tabs;
+
     for (let i = 0; i < numTabs && i < maxTabs; i++) {
       if (listStyle == this.FMTOPT_NUMBERED) {
 	listChar = i + 1 + ". ";
       }
 
-      var title = "";
-      title = tabbrowser.browsers[i].contentDocument.title;
+      let title = tabbrowserTabs[i].label;
 
       if (title == "") {
-	// The web page title in the browser tab may not be retrievable if the
-	// tab wasn't loaded.
-	let tabbrowserTabs = document.getElementById("tabbrowser-tabs").tabbrowser.tabs;
-	title = tabbrowserTabs[i].label;
-      }
-
-      if (title == "") {
-	var hdgs = tabbrowser.browsers[i].contentDocument.getElementsByTagName("h1");
-	if (hdgs && hdgs.length > 0) {
-	  title = hdgs[0].textContent;
-	}
-	else {
-	  title = this._strBundle.getString("untitledPage");
-	}
+        title = this._strBundle.getString("untitledPage");
       }
 
       body += listChar + title + br 
@@ -339,7 +327,7 @@ window.aecreations.sendtaburls = {
                                .getService(Components.interfaces.nsIAlertsService);
 
       alertSvc.showAlertNotification(
-        "chrome://sendtabs/skin/img/message-icon.png",
+        "chrome://sendtabs/skin/img/copy-to-clipboard.png",
 	this._strBundle.getString("appName"),
 	this._strBundle.getString("sendToClipboardConfirm"),
 	false,
