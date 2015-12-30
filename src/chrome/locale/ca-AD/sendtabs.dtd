@@ -6,13 +6,6 @@
 <!ENTITY sendtabs.toolbarbutton.label "Envia les adreces URL de les pestanyes">
 <!ENTITY sendtabs.toolbarbutton.tooltip "Envia per correu-e les adreces URL de totes les pestanyes obertes en aquesta finestra">
 <!---->
-<!ENTITY sendToClipboardConfirm "The URL list has been copied to the clipboard.">
-<!---->
-<!ENTITY googAppsDomain.label "Google Apps domain:">
-<!ENTITY googAppsDomain.accesskey "d">
-<!---->
-<!ENTITY sendToClipboard.label "">
-<!---->
 <!ENTITY fmtopts.caption "Opcions de format del correu-e">
 <!ENTITY fmtnone.label "Llista plana">
 <!ENTITY fmtnone.accesskey "P">
@@ -22,34 +15,3 @@
 <!ENTITY fmtbulleted.accesskey "B">
 <!ENTITY alwaysask.label "Pregunta sempre com vull el format de la llista">
 <!ENTITY alwaysask.accesskey "A">
-<!ENTITY sendTo.label "Send to:">
-<!ENTITY sendTo.accesskey "S">
-<!ENTITY mailClient.default "Default email program">
-<!ENTITY mailClient.clipboard "Clipboard">
-<!ENTITY mailClient.gmail "Gmail">
-<!ENTITY mailClient.googleAppsGmail "Google Apps">
-<!---->
-<!ENTITY sendtabsPrefDlg.title "Send Tab URLs Options">
-<!ENTITY tabOptions "General">
-<!ENTITY tabClipboard "Clipboard">
-<!ENTITY tabGoogleApps "Google Apps">
-<!ENTITY alwaysAskFmt.label "Always ask how I want the URL list formatted">
-<!ENTITY alwaysAskFmt.accesskey "A">
-<!ENTITY fmtSettings.label "Settings...">
-<!ENTITY fmtSettings.accesskey "S">
-<!ENTITY webMail "Web mail">
-<!ENTITY webmailNewTab.label "Open in new browser tab">
-<!ENTITY webmailNewTab.accesskey "t">
-<!ENTITY webmailNewWnd.label "Open in new browser window">
-<!ENTITY webmailNewWnd.accesskey "w">
-<!ENTITY showTabMenuCmd.label "">
-<!ENTITY showTabMenuCmd.accesskey "">
-<!ENTITY confirmCopy.label "Show confirmation when URL list is copied to clipboard">
-<!ENTITY confirmCopy.accesskey "c">
-<!ENTITY includeURLCount.label "Include the URL count">
-<!ENTITY includeURLCount.accesskey "I">
-<!ENTITY placeIt.label "Place it:">
-<!ENTITY placeIt.accesskey "P">
-<!ENTITY urlPos.above "above">
-<!ENTITY urlPos.below "below">
-<!ENTITY urlList.label "the URL list">

@@ -1,15 +1,9 @@
 <!---->
 <!ENTITY sendtabs.appName "Send Tab URLs">
 <!---->
-<!ENTITY sendtabs.menuitem.label "Send Tab URLs...">
-<!ENTITY sendtabs.menuitem.accesskey "E">
-<!ENTITY sendtabs.toolbarbutton.label "Send Tab URLs">
 <!ENTITY sendtabs.toolbarbutton.tooltip "Envoi par courriel les URL de tous les onglets ouverts dans la fenêtre active">
 <!---->
 <!ENTITY sendToClipboardConfirm "La liste d'URL a été copiée dans le presse-papier.">
-<!---->
-<!ENTITY googAppsDomain.label "Google Apps domain:">
-<!ENTITY googAppsDomain.accesskey "d">
 <!---->
 <!ENTITY sendToClipboard.label "Envoyer au presse-papier">
 <!---->
