@@ -14,7 +14,7 @@ locale	sendtabs	en-US	chrome/locale/en-US/
 #locale	sendtabs	da	chrome/locale/da/
 locale	sendtabs	de	chrome/locale/de/
 locale	sendtabs	es-ES	chrome/locale/es-ES/
-#locale	sendtabs	fr	chrome/locale/fr/
+locale	sendtabs	fr	chrome/locale/fr/
 locale	sendtabs	he-IL	chrome/locale/he-IL/
 locale	sendtabs	it	chrome/locale/it/
 locale	sendtabs	ko-KR	chrome/locale/ko-KR/
