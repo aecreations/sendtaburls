@@ -7,20 +7,20 @@
     <em:name>Send Tab URLs</em:name>
     <em:id>{4aebcd37-f454-4928-9233-174a026ed367}</em:id>
     <em:type>2</em:type>
-    <em:version>2.2+</em:version>
+    <em:version>2.3</em:version>
     <em:description>Send a list of browser tab URLs to email or the clipboard.</em:description>
     <em:creator>AE Creations</em:creator>
     <em:contributor>Babelzilla Translators</em:contributor>
     <em:iconURL>chrome://sendtabs/skin/img/icon.png</em:iconURL>
-    <em:homepageURL>http://aecreations.sourceforge.net/</em:homepageURL>
+    <em:homepageURL>http://aecreations.sourceforge.net/sendtaburls/</em:homepageURL>
     <em:optionsURL>chrome://sendtabs/content/preferences.xul</em:optionsURL>
 
     <!-- Firefox -->
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-	<em:minVersion>31.0</em:minVersion>
-	<em:maxVersion>43.*</em:maxVersion>
+	<em:minVersion>38.0</em:minVersion>
+	<em:maxVersion>45.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
