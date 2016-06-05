@@ -16,7 +16,7 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2004-2015
+ * Portions created by the Initial Developer are Copyright (C) 2004-2016
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -148,7 +148,7 @@ window.aecreations.sendtaburls = {
       }
     }
 
-    var br = this.aeUtils.getPref("sendtabs.message.line_break", "\r\n");
+    var br = this.aeUtils.getEOLChar();
     var mailDest = this.aeUtils.getPref("sendtabs.mailclient", 0);
     var tabbrowser = document.getElementById("content");
     var numTabs = tabbrowser.browsers.length;

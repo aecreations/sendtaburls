@@ -16,7 +16,7 @@
  *
  * The Initial Developer of the Original Code is 
  * Alex Eng <ateng@users.sourceforge.net>.
- * Portions created by the Initial Developer are Copyright (C) 2008-2015
+ * Portions created by the Initial Developer are Copyright (C) 2008-2016
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -31,6 +31,9 @@ const EXPORTED_SYMBOLS = ["aeUtils"];
 const DEBUG = false;
 const PREFNAME_PREFIX = "extensions.aecreations.";
 const EXTENSION_ID = "{4aebcd37-f454-4928-9233-174a026ed367}";
+
+const EOL_DEFAULT = 0;
+const EOL_UNIX = 1;
 
 const Cc = Components.classes;
 const Ci = Components.interfaces;
@@ -114,6 +117,21 @@ aeUtils.getOS = function ()
                              .createInstance(Components.interfaces
 					               .nsIXULRuntime);
   rv = xulRuntime.OS;
+
+  return rv;
+};
+
+
+aeUtils.getEOLChar = function ()
+{
+  let rv = "";
+
+  if (this.getOS() == "WINNT") {
+    rv = "\r\n";
+  }
+  else {
+    rv = "\n";
+  }
 
   return rv;
 };
