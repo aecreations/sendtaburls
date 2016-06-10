@@ -32,8 +32,8 @@ const DEBUG = false;
 const PREFNAME_PREFIX = "extensions.aecreations.";
 const EXTENSION_ID = "{4aebcd37-f454-4928-9233-174a026ed367}";
 
-const EOL_DEFAULT = 0;
-const EOL_UNIX = 1;
+const EOL_UNIX = 0;
+const EOL_WINDOWS = 1;
 
 const Cc = Components.classes;
 const Ci = Components.interfaces;
@@ -126,6 +126,17 @@ aeUtils.getEOLChar = function ()
 {
   let rv = "";
 
+  // Allow user override via secret pref.
+  if (this.hasPref("sendtabs.message.eol")) {
+    if (this.getPref("sendtabs.message.eol", EOL_UNIX) == EOL_WINDOWS) {
+      rv = "\r\n";
+    }
+    else {
+      rv = "\n";
+    }
+    return rv;
+  }
+  
   if (this.getOS() == "WINNT") {
     rv = "\r\n";
   }
