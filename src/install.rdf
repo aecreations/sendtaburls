@@ -7,7 +7,7 @@
     <em:name>Send Tab URLs</em:name>
     <em:id>{4aebcd37-f454-4928-9233-174a026ed367}</em:id>
     <em:type>2</em:type>
-    <em:version>2.3.1a1</em:version>
+    <em:version>2.3.1</em:version>
     <em:description>Send a list of browser tab URLs to email or the clipboard.</em:description>
     <em:creator>AE Creations</em:creator>
     <em:contributor>Babelzilla Translators</em:contributor>
@@ -20,7 +20,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 	<em:minVersion>38.0</em:minVersion>
-	<em:maxVersion>45.*</em:maxVersion>
+	<em:maxVersion>48.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
