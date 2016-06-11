@@ -14,7 +14,7 @@
     <em:iconURL>chrome://sendtabs/skin/img/icon.png</em:iconURL>
     <em:homepageURL>http://aecreations.sourceforge.net/sendtaburls/</em:homepageURL>
     <em:optionsURL>chrome://sendtabs/content/preferences.xul</em:optionsURL>
-
+    
     <!-- Firefox -->
     <em:targetApplication>
       <Description>
@@ -23,5 +23,6 @@
 	<em:maxVersion>48.*</em:maxVersion>
       </Description>
     </em:targetApplication>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
   </Description>
 </RDF>
