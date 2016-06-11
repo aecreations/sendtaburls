@@ -1,18 +1,12 @@
-<!---->
 <!ENTITY sendtabs.appName "Send Tab URLs">
-<!---->
 <!ENTITY sendtabs.menuitem.label "Tabblad-URL’s versturen…">
 <!ENTITY sendtabs.menuitem.accesskey "v">
 <!ENTITY sendtabs.toolbarbutton.label "Tabblad-URL’s versturen">
 <!ENTITY sendtabs.toolbarbutton.tooltip "Verstuurt de URL’s van alle openstaande tabbladen in het huidige browservenster naar e-mail, webmail of het Klembord">
-<!---->
 <!ENTITY sendToClipboardConfirm "De lijst met URL’s is naar het Klembord gekopieerd.">
-<!---->
 <!ENTITY googAppsDomain.label "Google Apps-domein:">
 <!ENTITY googAppsDomain.accesskey "d">
-<!---->
 <!ENTITY sendToClipboard.label "Naar Klembord versturen">
-<!---->
 <!ENTITY fmtopts.caption "Opmaakopties">
 <!ENTITY fmtnone.label "Gewone lijst">
 <!ENTITY fmtnone.accesskey "w">
@@ -28,7 +22,6 @@
 <!ENTITY mailClient.clipboard "Klembord">
 <!ENTITY mailClient.gmail "GMail">
 <!ENTITY mailClient.googleAppsGmail "Google Apps">
-<!---->
 <!ENTITY sendtabsPrefDlg.title "Send Tab URLs-opties">
 <!ENTITY tabOptions "Algemeen">
 <!ENTITY tabClipboard "Klembord">

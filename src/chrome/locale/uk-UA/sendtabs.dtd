@@ -1,18 +1,12 @@
-<!---->
 <!ENTITY sendtabs.appName "Send Tab URLs">
-<!---->
 <!ENTITY sendtabs.menuitem.label "Надіслати список адрес…">
 <!ENTITY sendtabs.menuitem.accesskey "а">
 <!ENTITY sendtabs.toolbarbutton.label "Надіслати список адрес">
 <!ENTITY sendtabs.toolbarbutton.tooltip "Надіслати список адрес вкладок поштою чи у буфер обміну">
-<!---->
 <!ENTITY sendToClipboardConfirm "Список адрес був скопійований до буферу обміну.">
-<!---->
 <!ENTITY googAppsDomain.label "Google Apps домен:">
 <!ENTITY googAppsDomain.accesskey "д">
-<!---->
 <!ENTITY sendToClipboard.label "Надіслати до буферу обміну">
-<!---->
 <!ENTITY fmtopts.caption "Параметри форматування">
 <!ENTITY fmtnone.label "Простий список">
 <!ENTITY fmtnone.accesskey "П">
@@ -28,7 +22,6 @@
 <!ENTITY mailClient.clipboard "Буфер обміну">
 <!ENTITY mailClient.gmail "Gmail">
 <!ENTITY mailClient.googleAppsGmail "Google Apps">
-<!---->
 <!ENTITY sendtabsPrefDlg.title "Send Tab URLs Параметри">
 <!ENTITY tabOptions "Загальні">
 <!ENTITY tabClipboard "Буфер обміну">
